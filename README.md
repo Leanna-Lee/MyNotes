@@ -18,15 +18,17 @@
 `#### 这是四级标题`
 ##### Heading 5
 `##### 这是五级标题`
+# 换行
+
 # 字体
-- *这是斜体* _这是斜体_：`*这是斜体* _这是斜体_`
-- **这是粗体** __这是粗体__：`**这是粗体** __这是粗体__`
-- ***这是粗斜体*** ___这是粗斜体___：`***这是粗斜体*** ___这是粗斜体___`
-- 上标：X<sub>2</sub>，下标：O<sup>2</sup>：`X<sub>2</sub>`，`<sup>2</sup>`
-- ~~带删除线的文字~~：`~~带删除线的文字~~`
+*这是斜体* _这是斜体_：`*这是斜体* _这是斜体_`  
+**这是粗体** __这是粗体__：`**这是粗体** __这是粗体__`  
+***这是粗斜体*** ___这是粗斜体___：`***这是粗斜体*** ___这是粗斜体___`  
+上标：X<sub>2</sub>，下标：O<sup>2</sup>：`X<sub>2</sub>`，`<sup>2</sup>`  
+~~带删除线的文字~~：`~~带删除线的文字~~`
 # 引用
 >这是引用的内容：`>这是引用的内容`  
-It was the best of times, it was the worst of times,  
+It was the best of times, it was the worst of times,
 it was the age of wisdom, it was the age of foolishness,   
 it was the epoch of belief, it was the epoch of incredulity,  
 it was the season of light, it was the season of darkness,  
