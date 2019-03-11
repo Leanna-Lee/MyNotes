@@ -44,4 +44,6 @@ We were all going direct to Heaven, we were all going direct the other way.
 这是希望之春，这是失望之冬；  
 人们面前有着各样事物，人们面前一无所有；  
 人们正在直登天堂，人们正在直下地狱。
+# 代码
+
 # 超链接
