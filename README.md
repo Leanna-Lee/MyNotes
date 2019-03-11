@@ -28,10 +28,10 @@
 ~~带删除线的文字~~：`~~带删除线的文字~~`
 # 引用
 >这是引用的内容：`>这是引用的内容`  
-It was the best of times, it was the worst of times,
-it was the age of wisdom, it was the age of foolishness,   
-it was the epoch of belief, it was the epoch of incredulity,  
-it was the season of light, it was the season of darkness,  
+It was the best of times, it was the worst of times,  
+It was the age of wisdom, it was the age of foolishness,   
+It was the epoch of belief, it was the epoch of incredulity,  
+It was the season of light, it was the season of darkness,  
 it was the spring of hope, it was the winter of despair,   
 we had everything before us, we had nothing before us,  
 we were all going direct to Heaven, we were all going direct the other way.  
