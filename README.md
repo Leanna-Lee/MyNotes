@@ -1,5 +1,5 @@
 **Table of Contents**  
-*++[Markdown语法](https://github.com/Leanna-Lee/MyNotes#markdown%E8%AF%AD%E6%B3%95)++*  
+*[Markdown语法](https://github.com/Leanna-Lee/MyNotes#markdown%E8%AF%AD%E6%B3%95)*  
 - [标题](https://github.com/Leanna-Lee/MyNotes#%E6%A0%87%E9%A2%98)  
 - [换行](https://github.com/Leanna-Lee/MyNotes#%E6%8D%A2%E8%A1%8C)  
 - [字体](https://github.com/Leanna-Lee/MyNotes#%E5%AD%97%E4%BD%93)  
@@ -31,7 +31,6 @@
 - ***这是粗斜体*** ___这是粗斜体___：`***这是粗斜体*** ___这是粗斜体___`  
 - 上标：X<sub>2</sub>，下标：O<sup>2</sup>：`X<sub>2</sub>`，`<sup>2</sup>`  
 - ~~带删除线的文字~~：`~~带删除线的文字~~`
-
 ## 引用
 用>表示引用
 >这是引用的内容：`>这是引用的内容`  
