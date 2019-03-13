@@ -8,7 +8,9 @@
 - 兼容主流的浏览器（IE8+）和Zepto.js，且支持iPad等平板设备；
 - 支持自定义主题样式。
 # 目录
-# 标题
+[标题](https://github.com/Leanna-Lee/MyNotes#%E6%A0%87%E9%A2%98)
+[换行](https://github.com/Leanna-Lee/MyNotes#%E6%8D%A2%E8%A1%8C)
+
 ## 标题
 用# 表示标题
 # Heading 1
