@@ -10,6 +10,9 @@
 # 目录
 [标题](https://github.com/Leanna-Lee/MyNotes#%E6%A0%87%E9%A2%98)
 [换行](https://github.com/Leanna-Lee/MyNotes#%E6%8D%A2%E8%A1%8C)
+[字体](https://github.com/Leanna-Lee/MyNotes#%E5%AD%97%E4%BD%93)
+[引用](https://github.com/Leanna-Lee/MyNotes#%E5%BC%95%E7%94%A8)
+[代码](https://github.com/Leanna-Lee/MyNotes#%E4%BB%A3%E7%A0%81)
 
 ## 标题
 用# 表示标题
