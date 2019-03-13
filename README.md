@@ -47,4 +47,9 @@ We were all going direct to Heaven, we were all going direct the other way.
 # 代码
 单行代码  
 代码块
+```
+function test(){
+	console.log("Hello world!");
+}
+```
 # 超链接
