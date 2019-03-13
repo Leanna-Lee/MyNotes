@@ -45,23 +45,40 @@ We were all going direct to Heaven, we were all going direct the other way.
 人们面前有着各样事物，人们面前一无所有；  
 人们正在直登天堂，人们正在直下地狱。
 ## 代码
-### 单行代码  
+### 单行代码
+```
+`print("Hello World!\n")`
+```
+`print("Hello World!\n")`
 ### 代码块   
 JS代码
-```
+````
 ```javascript
 function test(){
 	console.log("Hello world!");
 }
 ```
-```
-
+````
 ```javascript
 function test(){
 	console.log("Hello world!");
 }
 ```
 HTML代码
+````
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <mate charest="utf-8" />
+        <title>Hello world!</title>
+    </head>
+    <body>
+        <h1>Hello world!</h1>
+    </body>
+</html
+```
+````
 ```html
 <!DOCTYPE html>
 <html>
