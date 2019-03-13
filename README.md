@@ -59,13 +59,13 @@ JS代码
 ````
 ```javascript
 function test(){
-	console.log("Hello world!");
+    console.log("Hello world!");
 }
 ```
 ````
 ```javascript
 function test(){
-	console.log("Hello world!");
+    console.log("Hello world!");
 }
 ```
 HTML代码
