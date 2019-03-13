@@ -48,6 +48,14 @@ We were all going direct to Heaven, we were all going direct the other way.
 ### 单行代码  
 ### 代码块   
 JS代码
+```
+```javascript
+function test(){
+	console.log("Hello world!");
+}
+```
+```
+
 ```javascript
 function test(){
 	console.log("Hello world!");
