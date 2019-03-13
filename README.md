@@ -7,7 +7,7 @@
 - 支持 AMD / CMD 模块化加载（支持 Require.js & Sea.js），并且支持自定义扩展插件；
 - 兼容主流的浏览器（IE8+）和Zepto.js，且支持iPad等平板设备；
 - 支持自定义主题样式。
-# 标题
+## 标题
 # Heading 1
 `# 这是一级标题`
 ## Heading 2
@@ -18,16 +18,16 @@
 `#### 这是四级标题`
 ##### Heading 5
 `##### 这是五级标题`
-# 换行
+## 换行
 空格+空格+回车，在网页上显示的效果为换行，遵循HTML规则。  
 仅用回车，上下两行语句，在网页上显示的效果为同一行。
-# 字体
+## 字体
 - *这是斜体* _这是斜体_：`*这是斜体* _这是斜体_`  
 - **这是粗体** __这是粗体__：`**这是粗体** __这是粗体__`  
 - ***这是粗斜体*** ___这是粗斜体___：`***这是粗斜体*** ___这是粗斜体___`  
 - 上标：X<sub>2</sub>，下标：O<sup>2</sup>：`X<sub>2</sub>`，`<sup>2</sup>`  
 - ~~带删除线的文字~~：`~~带删除线的文字~~`
-# 引用
+## 引用
 >这是引用的内容：`>这是引用的内容`  
 It was the best of times, it was the worst of times.  
 It was the age of wisdom, it was the age of foolishness.  
@@ -44,12 +44,26 @@ We were all going direct to Heaven, we were all going direct the other way.
 这是希望之春，这是失望之冬；  
 人们面前有着各样事物，人们面前一无所有；  
 人们正在直登天堂，人们正在直下地狱。
-# 代码
-单行代码  
-代码块
-```
+## 代码
+### 单行代码  
+### 代码块   
+JS代码
+```javascript
 function test(){
 	console.log("Hello world!");
 }
 ```
-# 超链接
+HTML代码
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <mate charest="utf-8" />
+        <title>Hello world!</title>
+    </head>
+    <body>
+        <h1>Hello world!</h1>
+    </body>
+</html
+```
+## 超链接
