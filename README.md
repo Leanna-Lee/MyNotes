@@ -23,13 +23,14 @@
 空格+空格+回车，在网页上显示的效果为换行，遵循HTML规则。  
 仅用回车，上下两行语句，在网页上显示的效果为同一行。
 ## 字体
-用*
+用*表示斜体，**表示粗体，~~表示带删除线的文字。
 - *这是斜体* _这是斜体_：`*这是斜体* _这是斜体_`  
 - **这是粗体** __这是粗体__：`**这是粗体** __这是粗体__`  
 - ***这是粗斜体*** ___这是粗斜体___：`***这是粗斜体*** ___这是粗斜体___`  
 - 上标：X<sub>2</sub>，下标：O<sup>2</sup>：`X<sub>2</sub>`，`<sup>2</sup>`  
 - ~~带删除线的文字~~：`~~带删除线的文字~~`
 ## 引用
+用>表示引用
 >这是引用的内容：`>这是引用的内容`  
 It was the best of times, it was the worst of times.  
 It was the age of wisdom, it was the age of foolishness.  
@@ -47,6 +48,7 @@ We were all going direct to Heaven, we were all going direct the other way.
 人们面前有着各样事物，人们面前一无所有；  
 人们正在直登天堂，人们正在直下地狱。
 ## 代码
+用单引号表示单行代码；用三引号表示代码块。
 ### 单行代码
 ```
 `print("Hello World!\n")`
