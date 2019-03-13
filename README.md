@@ -1,5 +1,5 @@
 **Table of Contents**
-- [Mardown语法](https://github.com/Leanna-Lee/MyNotes#markdown%E8%AF%AD%E6%B3%95)  
+++*[Mardown语法](https://github.com/Leanna-Lee/MyNotes#markdown%E8%AF%AD%E6%B3%95)*++   
 [标题](https://github.com/Leanna-Lee/MyNotes#%E6%A0%87%E9%A2%98)  
 [换行](https://github.com/Leanna-Lee/MyNotes#%E6%8D%A2%E8%A1%8C)  
 [字体](https://github.com/Leanna-Lee/MyNotes#%E5%AD%97%E4%BD%93)  
@@ -22,12 +22,13 @@
 空格+空格+回车，在网页上显示的效果为换行，遵循HTML规则。  
 仅用回车，上下两行语句，在网页上显示的效果为同一行。
 ## 字体
-用*表示斜体，**表示粗体，~~表示带删除线的文字。
+用*表示斜体，**表示粗体，~~表示带删除线的文字，
 - *这是斜体* _这是斜体_：`*这是斜体* _这是斜体_`  
 - **这是粗体** __这是粗体__：`**这是粗体** __这是粗体__`  
 - ***这是粗斜体*** ___这是粗斜体___：`***这是粗斜体*** ___这是粗斜体___`  
 - 上标：X<sub>2</sub>，下标：O<sup>2</sup>：`X<sub>2</sub>`，`<sup>2</sup>`  
 - ~~带删除线的文字~~：`~~带删除线的文字~~`
+- ++带下划线的文字++：`+带下划线的文字++`
 ## 引用
 用>表示引用
 >这是引用的内容：`>这是引用的内容`  
