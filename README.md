@@ -4,12 +4,12 @@
 - [字体](https://github.com/Leanna-Lee/MyNotes#%E5%AD%97%E4%BD%93)  
 - [引用](https://github.com/Leanna-Lee/MyNotes#%E5%BC%95%E7%94%A8)  
 - [代码](https://github.com/Leanna-Lee/MyNotes#%E4%BB%A3%E7%A0%81)  
-   - [单行代码](https://github.com/Leanna-Lee/MyNotes#%E5%8D%95%E8%A1%8C%E4%BB%A3%E7%A0%81)
-   - [代码块](https://github.com/Leanna-Lee/MyNotes#%E4%BB%A3%E7%A0%81%E5%9D%97)
+  - [单行代码](https://github.com/Leanna-Lee/MyNotes#%E5%8D%95%E8%A1%8C%E4%BB%A3%E7%A0%81)
+  - [代码块](https://github.com/Leanna-Lee/MyNotes#%E4%BB%A3%E7%A0%81%E5%9D%97)
 - [超链接](https://github.com/Leanna-Lee/MyNotes#%E8%B6%85%E9%93%BE%E6%8E%A5)
 - [列表]()  
-   - [有序列表]()  
-   - [无序列表]() 
+  - [有序列表]()  
+  - [无序列表]() 
 # Markdown语法
 ## 标题
 ```
@@ -24,7 +24,7 @@
 空格+空格+回车，在网页上显示的效果为换行，遵循HTML规则。  
 仅用回车，上下两行语句，在网页上显示的效果为同一行。
 ## 字体
-用*表示斜体，**表示粗体，~~表示带删除线的文字，++表示带下划线的文字。
+用*或_表示斜体，**或__表示粗体，~~表示带删除线的文字。
 - *这是斜体* _这是斜体_：`*这是斜体* _这是斜体_`  
 - **这是粗体** __这是粗体__：`**这是粗体** __这是粗体__`  
 - ***这是粗斜体*** ___这是粗斜体___：`***这是粗斜体*** ___这是粗斜体___`  
@@ -108,9 +108,9 @@ HTML代码
 ### 有序列表  
 ```
 1. 列表内容  
-   i. 嵌套列表(开头三个空格)  
-   ii. 嵌套列表  
-   iii. 嵌套列表
+  i. 嵌套列表(开头两个空格)  
+  ii. 嵌套列表  
+  iii. 嵌套列表
 2. 列表内容
 3. 列表内容
 ```
