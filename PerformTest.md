@@ -32,7 +32,20 @@ Multi-CPU systems are handled. If your system has multiple CPUs, the default beh
 `tar -xvzf UnixBench5.1.3.tgz`  
 `cd UnixBench`  
 `make all`  
-`./Run`  
+**直接运行：**`./Run` 
+**带参数运行：**  
+Run [-q | -v][-i <n> ] [-c <n> [-c <n> ...]] [test ...]
+	-q Run in quiet mode.
+	-v Run in verbose mode.
+	-i <count> Run <count> iterations for each test -- slower tests use <count> / 3, but at least 1. Defaults to 10 (3 for slow tests).
+	-c <n> Run <n> copies of each test in parallel.
+	
+	./Run -c -1 -c 4
+	Will Run a single-streamed pass, then a 4-streamed pass.
+	4. Run test categories
+	./Run fstime -c 1
+	./Run pipe -c 2
+./Run dhry2reg -c 8 
 #### 3 参数和结果说明
 UnixBench 的运行结果、log 和输出保存在 results 目录，结果以 html 格式保存
 - Dhrystone
