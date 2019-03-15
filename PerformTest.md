@@ -3,15 +3,15 @@
 - [常用工具](https://github.com/Leanna-Lee/MyNotes/blob/master/PerformTest.md#%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7)
   - [UnixBench](https://github.com/Leanna-Lee/MyNotes/blob/master/PerformTest.md#unixbench)
   - [coremark](https://github.com/Leanna-Lee/MyNotes/blob/master/PerformTest.md#coremark)
-  - [stream](https://github.com/Leanna-Lee/MyNotes/blob/master/PerformTest.md#stream)
-  - [fio](https://github.com/Leanna-Lee/MyNotes/blob/master/PerformTest.md#fio)
+  - [Stream](https://github.com/Leanna-Lee/MyNotes/blob/master/PerformTest.md#stream)
+  - [FIO](https://github.com/Leanna-Lee/MyNotes/blob/master/PerformTest.md#fio)
   - [iPerf3](https://github.com/Leanna-Lee/MyNotes/blob/master/PerformTest.md#iperf3)
 # Performance Test
 ## 性能指标
-- CPU处理能力
-- 内存带宽
-- 磁盘IOPS、吞吐
-- 网络带宽
+- CPU处理：`UnixBench、coremark`
+- 内存带宽：`Stream`
+- 磁盘IOPS、吞吐：`FIO`
+- 网络带宽：`iPerf3`
 ## 常用工具
 ### UnixBench  
 UnixBench is the original BYTE UNIX benchmark suite, updated and revised by many people over the years.  
@@ -36,6 +36,6 @@ Multi-CPU systems are handled. If your system has multiple CPUs, the default beh
 #### 3 参数和结果说明
 ---
 ### coremark
-### STREAM
+### Stream
 ### FIO
 ### iPerf3
