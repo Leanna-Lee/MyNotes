@@ -1,11 +1,11 @@
-***[Performance Test]()***
-- [性能指标]()
-- [常用工具]()
-  - [UnixBench]()
-  - [coremark]()
-  - [stream]()
-  - [fio]()
-  - [iPerf3]()
+***[Performance Test](https://github.com/Leanna-Lee/MyNotes/blob/master/PerformTest.md#performance-test)***
+- [性能指标](https://github.com/Leanna-Lee/MyNotes/blob/master/PerformTest.md#%E6%80%A7%E8%83%BD%E6%8C%87%E6%A0%87)
+- [常用工具](https://github.com/Leanna-Lee/MyNotes/blob/master/PerformTest.md#%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7)
+  - [UnixBench](https://github.com/Leanna-Lee/MyNotes/blob/master/PerformTest.md#unixbench)
+  - [coremark](https://github.com/Leanna-Lee/MyNotes/blob/master/PerformTest.md#coremark)
+  - [stream](https://github.com/Leanna-Lee/MyNotes/blob/master/PerformTest.md#stream)
+  - [fio](https://github.com/Leanna-Lee/MyNotes/blob/master/PerformTest.md#fio)
+  - [iPerf3](https://github.com/Leanna-Lee/MyNotes/blob/master/PerformTest.md#iperf3)
 # Performance Test
 ## 性能指标
 - CPU处理能力
