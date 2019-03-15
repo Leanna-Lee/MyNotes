@@ -42,10 +42,10 @@ Run [-q | -v][-i <n>][-c <n>][test...]
 ./Run -c -1 -c 4
 Will Run a single-streamed pass, then a 4-streamed pass.
 ```
-****
-Run test categories
-	./Run fstime -c 1
-	./Run pipe -c 2
+**执行指定测试项：**
+```
+./Run fstime -c 1
+./Run pipe -c 2
 ./Run dhry2reg -c 8 
 ```
 #### 3 参数和结果说明
