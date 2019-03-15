@@ -34,7 +34,7 @@ Multi-CPU systems are handled. If your system has multiple CPUs, the default beh
 `make all`  
 `./Run`  
 #### 3 参数和结果说明
-UnixBench的运行结果、log以html格式保存在results
+UnixBench 的运行结果、log 和输出保存在 results 目录，结果以 html 格式保存
 - Dhrystone
 - Whetstone
 - execl Throughput
