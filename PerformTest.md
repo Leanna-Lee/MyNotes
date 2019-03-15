@@ -10,7 +10,7 @@
 ## 性能指标
 - CPU处理：`UnixBench、coremark`
 - 内存带宽：`Stream`
-- 磁盘IOPS、吞吐：`FIO`
+- 磁盘吞吐：`FIO`
 - 网络带宽：`iPerf3`
 ## 常用工具
 ### UnixBench  
@@ -34,6 +34,14 @@ Multi-CPU systems are handled. If your system has multiple CPUs, the default beh
 `make all`  
 `./Run`  
 #### 3 参数和结果说明
+- Dhrystone
+- Whetstone
+- execl Throughput
+- File Copy
+- Pipe Throughput
+- Process Creation
+- Shell Scripts
+- System Call Overhead
 ---
 ### coremark
 ### Stream
