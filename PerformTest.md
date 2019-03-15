@@ -31,7 +31,8 @@ Multi-CPU systems are handled. If your system has multiple CPUs, the default beh
 #### 2 安装和运行
 `tar -xvzf UnixBench5.1.3.tgz`  
 `cd UnixBench`  
-`make all`  
+`make all` 
+ 
 **直接运行：**  
 `./Run` 将运行UnixBench所有测试项  
 **带参数运行：**
