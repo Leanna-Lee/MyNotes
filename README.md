@@ -10,7 +10,7 @@
 - [列表]()  
   - [有序列表]()  
   - [无序列表]() 
-- [表格]()
+- [表格](https://github.com/Leanna-Lee/MyNotes/blob/master/README.md#%E8%A1%A8%E6%A0%BC)
 # Markdown语法
 ## 标题
 ```
@@ -128,7 +128,7 @@ HTML代码
 ```
   
 ## 表格
-(这里有空行)
+(这里有两个空行)
 |column1|column2|column3|
 |:--|:--:|--:|
 |左对齐|居中|右对齐|
