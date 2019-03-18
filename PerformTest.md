@@ -52,7 +52,7 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 ./Run dhry2reg -c 8 
 ```
 #### 3 参数和结果说明
-UnixBench 的运行结果、log 和输出保存在 results 目录，结果以 html 格式保存
+（1）UnixBench 的运行结果、log 和输出保存在 results 目录，结果以 html 格式保存
 - Dhrystone：字符串处理
 - Whetstone：浮点运算能力
 - execl Throughput：execl函数系统调用
@@ -61,7 +61,8 @@ UnixBench 的运行结果、log 和输出保存在 results 目录，结果以 ht
 - Process Creation
 - Shell Scripts
 - System Call Overhead
----
+  
+（2）直接执行./Run，
 ### coremark
 ### Stream
 ### FIO
