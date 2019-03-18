@@ -54,7 +54,7 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 #### 3 参数和结果说明
 （1）UnixBench 的运行结果、log 和输出保存在 results 目录，结果以 html 格式保存  
 |测试项目|测试内容|
-|:--|:--|
+|-|-|
 |Dhrystone|该测试侧重字符串处理，没有浮点运算。结果受硬件设计和软件优化影响大|
 |Whetstone|测试浮点运算速度和效率，该测试包含多个典型的在科学计算中执行的操作的组合|
 |Execl Throughput|这个测试测量每秒execl函数调用的次数。execl是exec函数家族的一部分,该函数用一个新的进程映像替换当前的进程映像|
