@@ -57,16 +57,13 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 |:--|:--|
 |Dhrystone||
 |Whetstone||
-|||
-
-- Dhrystone：字符串处理
-- Whetstone：浮点运算能力
-- execl Throughput：execl函数系统调用
-- File Copy
-- Pipe Throughput
-- Process Creation
-- Shell Scripts
-- System Call Overhead
+|execl Throughput||
+|File Copy||
+|Pipe Throughput||
+|Process Creation||
+|Shell Scripts||
+|System Call Overhead||
+|Graphical Tests||
   
 （2）直接执行`./Run` 各测试项将运行两次
 `Benchmark Run: 8 CPUs; 1 parallel process`  
