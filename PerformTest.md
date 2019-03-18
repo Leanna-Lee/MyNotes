@@ -66,10 +66,11 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 |Shell Scripts|测试每秒进程可以并发获取一个 shell 脚本的 n 个副本的次数，n取值为1 2 4 8|
 |System Call Overhead|测试进入和离开操作系统内核的开销，即执行系统调用的消耗|
 |Graphical Tests|测试显卡2D和3D图形的大致性能|  
-  
-（2）直接执行`./Run` 各测试项将运行两次
-`Benchmark Run: 8 CPUs; 1 parallel process`    
+
+（2）直接执行`./Run` 各测试项将运行两次  
+`Benchmark Run: 8 CPUs; 1 parallel process`  
 `Benchmark Run: 8 CPUs; 8 parallel processes`  
+  
 （3）
 
 ### coremark
