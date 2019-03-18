@@ -53,9 +53,9 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 ```
 #### 3 参数和结果说明
 UnixBench 的运行结果、log 和输出保存在 results 目录，结果以 html 格式保存
-- Dhrystone
-- Whetstone
-- execl Throughput
+- Dhrystone：字符串处理
+- Whetstone：浮点运算能力
+- execl Throughput：execl函数系统调用
 - File Copy
 - Pipe Throughput
 - Process Creation
