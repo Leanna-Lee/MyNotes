@@ -57,9 +57,10 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 |:--|:--|
 |Dhrystone||
 |Whetstone||
-|execl Throughput||
+|Execl Throughput||
 |File Copy||
 |Pipe Throughput||
+|Pipe-based Context Switching||
 |Process Creation||
 |Shell Scripts||
 |System Call Overhead||
