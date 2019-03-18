@@ -55,8 +55,7 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 （1）UnixBench 的运行结果、log 和输出保存在 results 目录，结果以 html 格式保存
 |测试项目|测试内容|
 |:--|:--|
-|||
-|||
+
 
 - Dhrystone：字符串处理
 - Whetstone：浮点运算能力
