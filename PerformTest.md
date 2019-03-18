@@ -62,7 +62,11 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 - Shell Scripts
 - System Call Overhead
   
-（2）直接执行./Run，
+（2）直接执行`./Run` 各测试项将运行两次
+`Benchmark Run: 8 CPUs; 1 parallel process`  
+`Benchmark Run: 8 CPUs; 8 parallel processes`  
+（3）
+
 ### coremark
 ### Stream
 ### FIO
