@@ -35,6 +35,8 @@ Multi-CPU systems are handled. If your system has multiple CPUs, the default beh
  
 **直接运行：**  
 `./Run` 将运行UnixBench所有测试项  
+**后台运行：**
+`nohup ./Run &` 
   
 **带参数运行：**
 ```
@@ -124,7 +126,10 @@ The test consists of multiple repetitions of four the kernels, and the best resu
 #### 1 下载地址
 [http://www.cs.virginia.edu/stream/ref.html#start](http://www.cs.virginia.edu/stream/ref.html#start)
 [http://www.nersc.gov/users/computational-systems/cori/nersc-8-procurement/trinity-nersc-8-rfp/nersc-8-trinity-benchmarks/stream/#toc-anchor-2]([http://www.nersc.gov/users/computational-systems/cori/nersc-8-procurement/trinity-nersc-8-rfp/nersc-8-trinity-benchmarks/stream/#toc-anchor-2)  
-#### 2 安装和运行
+#### 2 安装和运行  
+`yum -i install gcc	//安装gcc，如果没有`  
+tar -xvf stream.tar
+vim stream.c
 #### 3 参数和结果说明
 
 ------
