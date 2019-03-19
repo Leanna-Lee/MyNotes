@@ -196,17 +196,34 @@ Fio is in wide use in many places, for both benchmarking, QA, and verification p
 [http://freshmeat.sourceforge.net/projects/fio](http://freshmeat.sourceforge.net/projects/fio)  
 [https://github.com/axboe/fio/](https://github.com/axboe/fio/)
 #### 2 安装和运行
-centOS yum 源直接安装 `yum install -y fio`  
-rpm 包安装 `rpm -ivh fio-xxx-xxx.x86_64.rpm`  
-运行  
+（1）centOS yum 源直接安装 `yum install -y fio`  
+（2）rpm 包安装 `rpm -ivh fio-xxx-xxx.x86_64.rpm`  
+- 运行  
 ```
 fio -name=/mnt/test_io -direct=1 -ioengine=libaio -group_reporting=1 -rw=randread -bs=128K -size=16G -numjobs=4 -iodepth=64
 ```
 - 若运行报错，安装libaio-devl
 `yum install libaio-devel`
 
-#### 3 参数和结果说明
-
+#### 3 参数和结果说明  
+```
+name=/mnt/test_io    #读写测试所在目录，通常选择需要测试的盘的data目录
+direct=1             #测试过程绕过机器自带的buffer。使测试结果更真实
+iodepth=64           #队列深度
+rw=randwrite         #测试随机写的I/O
+rw=randrw            #测试随机混合写和读的I/O
+rw=randread          #测试随机读的I/O
+rw=write             #测试顺序写的I/O
+rw=read              #测试顺序读的I/O
+rw=rw                #测试顺序混合写和读的I/O
+ioengine=libaio      #io引擎使用libaio方式，异步I/O，减少交互次数，更有效率
+bs=1024k             #单次io的块文件大小为1024k
+size=16G              #本次测试的文件大小为16g，以每次1024k的io进行测试
+numjobs=4            #本次测试的线程为4个
+rwmixwrite=30        #在混合读写的模式下，写占30%
+rwmixread=70         #在混合读写的模式下，读占70%
+group_reporting      #关于显示结果的，汇总每个进程的信息
+```
 ---
 ### iPerf3
 #### 1 下载地址
