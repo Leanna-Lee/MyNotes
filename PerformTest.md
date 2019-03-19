@@ -197,7 +197,14 @@ Fio is in wide use in many places, for both benchmarking, QA, and verification p
 [https://github.com/axboe/fio/](https://github.com/axboe/fio/)
 #### 2 安装和运行
 centOS yum 源直接安装 `yum install -y fio`  
-rpm 包安装 `rpm -ivh fio-xxx.xx`  
+rpm 包安装 `rpm -ivh fio-xxx-xxx.x86_64.rpm`  
+运行  
+```
+fio -name=/mnt/test_io -direct=1 -ioengine=libaio -group_reporting=1 -rw=randread -bs=128K -size=16G -numjobs=4 -iodepth=64
+```
+- 若运行报错，安装libaio-devl
+`yum install libaio-devel`
+
 #### 3 参数和结果说明
 
 ---
