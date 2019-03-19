@@ -75,19 +75,19 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 
 |Test|Score|Unit|Time|Iters.|Baseline|Index|
 |:--|:--|:--|:--|:--|:--|:--|
-|Dhrystone 2 using register variables||lps|10.0 s|7|||
-|Double-Precision Whetstone||MWIPS|10.0 s|7|||
-|Execl Throughput||lps|30.0 s|2|||
-|File Copy 1024 bufsize 2000 mabxblocks||KBps|30.0 s|2|||
-|File Copy 256 bufsize 500 maxblocks||KBps|30.0 s|2|||
-|File Copy 4096 bufsize 8000 maxblocks||KBps|30.0 s|2|||
-|Pipe Throughput||lps|10.0 s|7|||
-|Pipe-based Context Switching||lps|10.0 s|7|||
-|Process Creation||lps|30.0 s|2|||
-|Shell Scripts (1 concurrent)||lpm|60.0 s|2|||
-|Shell Scripts (8 concurrent)||lpm|60.1 s|2|||
-|System Call Overhead||lps|10.0 s|7||||
-|System Benchmarks Index Score:||
+|Dhrystone 2 using register variables|213299834.2|lps|10.0 s|7|116700.0|18277.6|
+|Double-Precision Whetstone|28813.5|MWIPS|10.0 s|7|55.0|5238.8|
+|Execl Throughput|19268.2|lps|30.0 s|2|43.0|4481.0|
+|File Copy 1024 bufsize 2000 mabxblocks||KBps|30.0 s|2|3960.0||
+|File Copy 256 bufsize 500 maxblocks||KBps|30.0 s|2|1655.0||
+|File Copy 4096 bufsize 8000 maxblocks||KBps|30.0 s|2|5800.0||
+|Pipe Throughput||lps|10.0 s|7|12440.0||
+|Pipe-based Context Switching||lps|10.0 s|7|4000.0||
+|Process Creation||lps|30.0 s|2|126.0||
+|Shell Scripts (1 concurrent)||lpm|60.0 s|2|42.4||
+|Shell Scripts (8 concurrent)||lpm|60.1 s|2|6.0||
+|System Call Overhead||lps|10.0 s|7|15000.0|||
+|System Benchmarks Index Score:||||||4140.6|
 
 ### coremark
 ### Stream
