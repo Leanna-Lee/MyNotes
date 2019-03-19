@@ -95,8 +95,14 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 #### 4 一些注意事项
 UnixBench代码默认所能测试的系统最大CPU数有限   
 可修改Run脚本中的maxCopies  
-
-
+```
+my $testCats = {
+    'system'    => { 'name' => "System Benchmarks", 'maxCopies' => 100 },
+    '2d'        => { 'name' => "2D Graphics Benchmarks", 'maxCopies' => 1 },
+    '3d'        => { 'name' => "3D Graphics Benchmarks", 'maxCopies' => 1 },
+    'misc'      => { 'name' => "Non-Index Benchmarks", 'maxCopies' => 100 },
+};
+```
 ------
 ### coremark
 ### Stream
