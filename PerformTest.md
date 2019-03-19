@@ -200,7 +200,9 @@ Fio is in wide use in many places, for both benchmarking, QA, and verification p
 （2）rpm 包安装 `rpm -ivh fio-xxx-xxx.x86_64.rpm`  
 - 运行  
 ```
-fio -name=/mnt/test_io -direct=1 -ioengine=libaio -group_reporting=1 -rw=randread -bs=128K -size=16G -numjobs=4 -iodepth=64
+fio -name=/mnt/test_io -direct=1 -ioengine=libaio -group_reporting=1 -rw=randread -bs=128K -size=16G -numjobs=4 -iodepth=64  
+
+后台执行可使用 nohup <command> &
 ```
 - 若运行报错，安装libaio-devl
 `yum install libaio-devel`
@@ -222,8 +224,15 @@ size=16G              #本次测试的文件大小为16g，以每次1024k的io�
 numjobs=4            #本次测试的线程为4个
 rwmixwrite=30        #在混合读写的模式下，写占30%
 rwmixread=70         #在混合读写的模式下，读占70%
-group_reporting      #关于显示结果的，汇总每个进程的信息
+group_reporting      #关于显示结果的，汇总每个进程的信息  
+
+Results Analysis
+bw        #磁盘吞吐量
+iops      #磁盘每秒读写次数
+lat       #响应时延
 ```
+#### 4 一些注意事项
+
 ---
 ### iPerf3
 #### 1 下载地址
