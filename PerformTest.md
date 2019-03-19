@@ -106,5 +106,13 @@ my $testCats = {
 ------
 ### coremark
 ### Stream
+#### 1 下载地址
+[http://www.cs.virginia.edu/stream/ref.html#start](http://www.cs.virginia.edu/stream/ref.html#start)
+http://www.nersc.gov/users/computational-systems/cori/nersc-8-procurement/trinity-nersc-8-rfp/nersc-8-trinity-benchmarks/stream/#toc-anchor-2]()
+
+#### 2 安装和运行
+#### 3 参数和结果说明
+
+------
 ### FIO
 ### iPerf3
