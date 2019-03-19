@@ -134,7 +134,15 @@ The test consists of multiple repetitions of four the kernels, and the best resu
 `编辑 make`  
 `执行 ./stream_c.exe`  
 
-修改测试所有Array大小N，80000000大概使用1.8G内存空间  
+修改测试所用Array大小N，80000000大概使用1.8G内存空间  
+```C
+#ifndef N
+#    define N    80000000
+#endif
+#ifndef NTIMES
+#    define NTIMES    500
+#endif
+```
 修改测试次数NTIMES  
 
 ------
