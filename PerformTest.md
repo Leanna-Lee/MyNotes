@@ -72,6 +72,8 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 `Benchmark Run: 8 CPUs; 8 parallel processes`  
   
 （3）UnixBench得分计算说明  
+- Index = Score / Baseline * 10
+- 
 
 |Test|Score|Unit|Time|Iters.|Baseline|Index|
 |:--|:--|:--|:--|:--|:--|:--|
