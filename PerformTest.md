@@ -129,21 +129,29 @@ The test consists of multiple repetitions of four the kernels, and the best resu
 #### 2 安装和运行  
 `yum -i install gcc	//安装gcc，如果没有`   
 `tar -xvf stream.tar`  
-`vim stream.c`   
-`vim Makefile`  
+`vim stream.c	//如下图所示`   
+`vim Makefile	//如下图所示`  
 `编辑 make`  
 `执行 ./stream_c.exe`  
 
-修改测试所用Array大小N，80000000大概使用1.8G内存空间  
+修改测试所用Array大小N，80000,000大概使用1.8G内存空间  
+修改测试次数NTIMES 
 ```C
+vim stream.c
 #ifndef N
 #    define N    80000000
 #endif
 #ifndef NTIMES
 #    define NTIMES    500
 #endif
+#ifndef OFFSET
+#    define OFFSET    0
+#endif
 ```
-修改测试次数NTIMES  
+```C
+vim Makefile
+```
+  
 
 ------
 ### FIO
