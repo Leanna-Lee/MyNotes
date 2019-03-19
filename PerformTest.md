@@ -90,8 +90,13 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 |Shell Scripts (1 concurrent)||lpm|60.0 s|2|42.4||
 |Shell Scripts (8 concurrent)||lpm|60.1 s|2|6.0||
 |System Call Overhead||lps|10.0 s|7|15000.0|||
-|System Benchmarks Index Score:||||||4140.6|
+|System Benchmarks Index Score:||||||4140.6|  
 
+#### 4 一些注意事项
+UnixBench代码默认所能测试的系统最大CPU数是16
+
+
+------
 ### coremark
 ### Stream
 ### FIO
