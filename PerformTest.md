@@ -81,7 +81,7 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 |File Copy 1024 bufsize 2000 mabxblocks||KBps|30.0 s||||
 |File Copy 256 bufsize 500 maxblocks||KBps|30.0 s||||
 |File Copy 4096 bufsize 8000 maxblocks||KBps|30.0 s||||
-|Pipe Throughput||lps|30.0 s||||
+|Pipe Throughput||lps|10.0 s||||
 |Pipe-based Context Switching||lps|10.0 s||||
 |Process Creation||lps|10.0 s||||
 |Shell Scripts (1 concurrent)||lpm|60.0 s||||
