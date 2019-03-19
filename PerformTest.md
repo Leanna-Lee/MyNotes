@@ -75,18 +75,18 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 
 |Test|Score|Unit|Time|Iters.|Baseline|Index|
 |:--|:--|:--|:--|:--|:--|:--|
-|Dhrystone 2 using register variables||lps|10.0 s||||
-|Double-Precision Whetstone||MWIPS|10.0 s||||
-|Execl Throughput||lps|30.0 s||||
-|File Copy 1024 bufsize 2000 mabxblocks||KBps|30.0 s||||
-|File Copy 256 bufsize 500 maxblocks||KBps|30.0 s||||
-|File Copy 4096 bufsize 8000 maxblocks||KBps|30.0 s||||
-|Pipe Throughput||lps|10.0 s||||
-|Pipe-based Context Switching||lps|10.0 s||||
-|Process Creation||lps|30.0 s||||
-|Shell Scripts (1 concurrent)||lpm|60.0 s||||
-|Shell Scripts (8 concurrent)||lpm|60.1 s||||
-|System Call Overhead||lps|10.0 s|||||
+|Dhrystone 2 using register variables||lps|10.0 s|7|||
+|Double-Precision Whetstone||MWIPS|10.0 s|7|||
+|Execl Throughput||lps|30.0 s|2|||
+|File Copy 1024 bufsize 2000 mabxblocks||KBps|30.0 s|2|||
+|File Copy 256 bufsize 500 maxblocks||KBps|30.0 s|2|||
+|File Copy 4096 bufsize 8000 maxblocks||KBps|30.0 s|2|||
+|Pipe Throughput||lps|10.0 s|7|||
+|Pipe-based Context Switching||lps|10.0 s|7|||
+|Process Creation||lps|30.0 s|2|||
+|Shell Scripts (1 concurrent)||lpm|60.0 s|2|||
+|Shell Scripts (8 concurrent)||lpm|60.1 s|2|||
+|System Call Overhead||lps|10.0 s|7||||
 |System Benchmarks Index Score:||
 
 ### coremark
