@@ -138,7 +138,7 @@ The test consists of multiple repetitions of four the kernels, and the best resu
 修改测试所用Array大小N，80000,000大概使用1.8G内存空间  
 修改测试次数NTIMES  
 `vim stream.c`
-```C
+```C  
 #ifndef N
 #    define N    80000000
 #endif
@@ -150,7 +150,7 @@ The test consists of multiple repetitions of four the kernels, and the best resu
 #endif
 ```  
 `vim Makefile`
-```C
+```C  
 CC = gcc
 #FF = ftn
 
