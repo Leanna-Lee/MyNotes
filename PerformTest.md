@@ -72,10 +72,20 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 `Benchmark Run: 8 CPUs; 8 parallel processes`  
   
 （3）UnixBench得分计算说明  
-  
+
 |Test|Score|Unit|Time|Iters.|Baseline|Index|
-|:--|:--|:--
-|Dhrystone 2 using register variables|||||||  
+|:--|:--|:--|:--|:--|:--|:--|
+|Dhrystone 2 using register variables|||||||
+|Double-Precision Whetstone|||||||
+|Execl Throughput|||||||
+|File Copy 1024 bufsize 2000 mabxblocks|||||||
+|File Copy 256 bufsize 500 maxblocks|||||||
+|File Copy 4096 bufsize 8000 maxblo|||||||
+||||||||
+||||||||
+||||||||
+||||||||
+||||||||
 
 ### coremark
 ### Stream
