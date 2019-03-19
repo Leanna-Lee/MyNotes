@@ -73,8 +73,8 @@ Will Run a single-streamed pass, then a 4-streamed pass.
   
 （3）UnixBench得分计算说明  
 - Index = Score / Baseline * 10  
-- aver = Average(log~e~(Index)) `//各项Index的值以e为底取对数，再取平均值`  
-- System Benchmarks Index Score = e^aver^ `//e的aver次方`
+- aver = Average(log<sub>e</sub>(Index)) `//各项Index的值以e为底取对数，再取平均值`  
+- System Benchmarks Index Score = e<sup>aver^ `//e的aver次方`
 
 |Test|Score|Unit|Time|Iters.|Baseline|Index|
 |:--|:--|:--|:--|:--|:--|:--|
