@@ -75,18 +75,18 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 
 |Test|Score|Unit|Time|Iters.|Baseline|Index|
 |:--|:--|:--|:--|:--|:--|:--|
-|Dhrystone 2 using register variables|||||||
-|Double-Precision Whetstone|||||||
-|Execl Throughput|||||||
-|File Copy 1024 bufsize 2000 mabxblocks|||||||
-|File Copy 256 bufsize 500 maxblocks|||||||
-|File Copy 4096 bufsize 8000 maxblocks|||||||
-|Pipe Throughput|||||||
-|Pipe-based Context Switching|||||||
-|Process Creation|||||||
-|Shell Scripts (1 concurrent)|||||||
-|Shell Scripts (8 concurrent)|||||||
-|System Call Overhead||||||||
+|Dhrystone 2 using register variables||lps|||||
+|Double-Precision Whetstone||MWIPS|||||
+|Execl Throughput||lps|||||
+|File Copy 1024 bufsize 2000 mabxblocks||KBps|||||
+|File Copy 256 bufsize 500 maxblocks||KBps|||||
+|File Copy 4096 bufsize 8000 maxblocks||lps|||||
+|Pipe Throughput||lps|||||
+|Pipe-based Context Switching||lps|||||
+|Process Creation||lps|||||
+|Shell Scripts (1 concurrent)||lps|||||
+|Shell Scripts (8 concurrent)||lpm|||||
+|System Call Overhead||lpm||||||
 |System Benchmarks Index Score:||
 
 ### coremark
