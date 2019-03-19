@@ -106,22 +106,23 @@ my $testCats = {
 };
 ```
 ------
-### coremark
+### coremark  
+---
 ### Stream  
 The STREAM benchmark is a simple synthetic benchmark program that measures sustainable memory bandwidth (in MB/s) and the corresponding computation rate for simple vector kernels.  
   
 The table below shows how many Bytes and FLOPs are counted in each iteration of the STREAM loops.  
   
 The test consists of multiple repetitions of four the kernels, and the best results of (typically) 10 trials are chosen.  
-
-    ------------------------------------------------------------------
-    name        kernel                  bytes/iter      FLOPS/iter
-    ------------------------------------------------------------------
-    COPY:       a(i) = b(i)                 16              0
-    SCALE:      a(i) = q*b(i)               16              1
-    SUM:        a(i) = b(i) + c(i)          24              1
-    TRIAD:      a(i) = b(i) + q*c(i)        24              2
-    ------------------------------------------------------------------
+  
+    ------------------------------------------------------------------  
+    name        kernel                  bytes/iter      FLOPS/iter  
+    ------------------------------------------------------------------  
+    COPY:       a(i) = b(i)                 16              0  
+    SCALE:      a(i) = q*b(i)               16              1  
+    SUM:        a(i) = b(i) + c(i)          24              1  
+    TRIAD:      a(i) = b(i) + q*c(i)        24              2  
+    ------------------------------------------------------------------  
 
 #### 1 下载地址  
 [http://www.cs.virginia.edu/stream/ref.html#start](http://www.cs.virginia.edu/stream/ref.html#start)  
@@ -164,27 +165,23 @@ FFLAGS = -O2
 CFLAGS += -fopenmp
 #FFLAGS += -fopenmp
 
-FF = g77
-FFLAGS = -O2
+#INTEL
+#CFLAGS += -openmp
+#FFLAGS += -openmp
 
-all: stream_f.exe stream_c.exe
+#all: stream_f.exe stream_c.exe
 
-stream_f.exe: stream.f mysecond.o
-	$(CC) $(CFLAGS) -c mysecond.c
-	$(FF) $(FFLAGS) -c stream.f
-	$(FF) $(FFLAGS) stream.o mysecond.o -o stream_f.exe
+#stream_f.exe: stream.f mysecond.o
+#	$(CC) $(CFLAGS) -c mysecond.c
+#	$(FF) $(FFLAGS) -c stream.f
+#	$(FF) $(FFLAGS) stream.o mysecond.o -o stream_f.exe
 
 stream_c.exe: stream.c
 	$(CC) $(CFLAGS) stream.c -o stream_c.exe
 
 clean:
 	rm -f stream_f.exe stream_c.exe *.o
-
-# an example of a more complex build line for the Intel icc compiler
-stream.icc: stream.c
-	icc -O3 -xCORE-AVX2 -ffreestanding -qopenmp -DSTREAM_ARRAY_SIZE=80000000 -DNTIMES=20 stream.c -o stream.omp.AVX2.80M.20x.icc
 ```
-  
 
 ------
 ### FIO
