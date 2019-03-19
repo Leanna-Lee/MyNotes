@@ -127,18 +127,18 @@ The test consists of multiple repetitions of four the kernels, and the best resu
 [http://www.cs.virginia.edu/stream/ref.html#start](http://www.cs.virginia.edu/stream/ref.html#start)
 [http://www.nersc.gov/users/computational-systems/cori/nersc-8-procurement/trinity-nersc-8-rfp/nersc-8-trinity-benchmarks/stream/#toc-anchor-2]([http://www.nersc.gov/users/computational-systems/cori/nersc-8-procurement/trinity-nersc-8-rfp/nersc-8-trinity-benchmarks/stream/#toc-anchor-2)  
 #### 2 安装和运行  
-`yum -i install gcc	//安装gcc，如果没有`  
-`tar -xvf stream.tar`
-`vim stream.c` 
-`vim Makefile`
-`编辑 make`
-`执行 ./stream_c.exe` 
+`yum -i install gcc	//安装gcc，如果没有`   
+`tar -xvf stream.tar`  
+`vim stream.c`   
+`vim Makefile`  
+`编辑 make`  
+`执行 ./stream_c.exe`  
 
-修改测试所有Array大小N，80000000大概使用1.8G内存空间
-修改测试次数NTIMES
+修改测试所有Array大小N，80000000大概使用1.8G内存空间  
+修改测试次数NTIMES  
 ![屏幕快照 20190319 14.35.51.png](0)  
 
-`vim Makefile` 
+`vim Makefile`   
 ![屏幕快照 20190319 14.38.17.png](1)
 
 ------
