@@ -233,11 +233,15 @@ lat       #响应时延
 ```
 #### 4 一些注意事项
 测试所需磁盘大小 = size * numjobs  
-比如 16G * 4 = 64G，需要至少64G的磁盘空间
+比如 16G * 4 = 64G，需要至少64G的磁盘空间  
 可使用 `lsblk` 和 `df -h` 命令查看挂载的目录磁盘空间大小
 
 ---
 ### iPerf3
-#### 1 下载地址
-#### 2 安装和运行
+#### 1 下载地址  
+[https://iperf.fr/iperf-download.php](https://iperf.fr/iperf-download.php)
+#### 2 安装和运行  
+（1）centOS yum 源直接安装 `yum install -y iperf3`    
+（2）rpm 包安装 `rpm -ivh iperf3-xxx-xxx.x86_64.rpm`  
+Serve 
 #### 3 参数和结果说明
