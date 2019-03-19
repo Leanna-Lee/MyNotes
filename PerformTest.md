@@ -93,7 +93,8 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 |System Benchmarks Index Score:||||||4140.6|  
 
 #### 4 一些注意事项
-UnixBench代码默认所能测试的系统最大CPU数是16
+UnixBench代码默认所能测试的系统最大CPU数有限   
+可修改Run脚本中的maxCopies  
 
 
 ------
