@@ -78,15 +78,15 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 |Dhrystone 2 using register variables||lps|10.0 s||||
 |Double-Precision Whetstone||MWIPS|10.0 s||||
 |Execl Throughput||lps|30.0 s||||
-|File Copy 1024 bufsize 2000 mabxblocks||KBps|||||
-|File Copy 256 bufsize 500 maxblocks||KBps|||||
-|File Copy 4096 bufsize 8000 maxblocks||KBps|||||
-|Pipe Throughput||lps|||||
-|Pipe-based Context Switching||lps|||||
-|Process Creation||lps|||||
-|Shell Scripts (1 concurrent)||lpm|||||
-|Shell Scripts (8 concurrent)||lpm|||||
-|System Call Overhead||lps||||||
+|File Copy 1024 bufsize 2000 mabxblocks||KBps|30.0 s||||
+|File Copy 256 bufsize 500 maxblocks||KBps|30.0 s||||
+|File Copy 4096 bufsize 8000 maxblocks||KBps|30.0 s||||
+|Pipe Throughput||lps|30.0 s||||
+|Pipe-based Context Switching||lps|10.0 s||||
+|Process Creation||lps|10.0 s||||
+|Shell Scripts (1 concurrent)||lpm|60.0 s||||
+|Shell Scripts (8 concurrent)||lpm|60.1 s||||
+|System Call Overhead||lps|10.0 s|||||
 |System Benchmarks Index Score:||
 
 ### coremark
