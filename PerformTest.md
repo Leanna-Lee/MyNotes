@@ -135,9 +135,9 @@ The test consists of multiple repetitions of four the kernels, and the best resu
 `执行 ./stream_c.exe`  
 
 修改测试所用Array大小N，80000,000大概使用1.8G内存空间  
-修改测试次数NTIMES 
+修改测试次数NTIMES  
+`vim stream.c`
 ```C
-vim stream.c
 #ifndef N
 #    define N    80000000
 #endif
@@ -147,11 +147,22 @@ vim stream.c
 #ifndef OFFSET
 #    define OFFSET    0
 #endif
-```
+```  
+`vim Makefile`
 ```C
-vim Makefile
 CC = gcc
+#FF = ftn
+
 CFLAGS = -O2
+FFLAGS = -O2
+
+#PGI
+#CFLAGS += -mp
+#FFLAGS += -mp
+
+#GNU
+CFLAGS += -fopenmp
+#FFLAGS += -fopenmp
 
 FF = g77
 FFLAGS = -O2
