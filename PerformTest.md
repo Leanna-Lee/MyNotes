@@ -124,7 +124,7 @@ The test consists of multiple repetitions of four the kernels, and the best resu
     ------------------------------------------------------------------
 
 #### 1 下载地址
-[http://www.cs.virginia.edu/stream/ref.html#start](http://www.cs.virginia.edu/stream/ref.html#start)
+[http://www.cs.virginia.edu/stream/ref.html#start](http://www.cs.virginia.edu/stream/ref.html#start)  
 [http://www.nersc.gov/users/computational-systems/cori/nersc-8-procurement/trinity-nersc-8-rfp/nersc-8-trinity-benchmarks/stream/#toc-anchor-2]([http://www.nersc.gov/users/computational-systems/cori/nersc-8-procurement/trinity-nersc-8-rfp/nersc-8-trinity-benchmarks/stream/#toc-anchor-2)  
 #### 2 安装和运行  
 `yum -i install gcc	//安装gcc，如果没有`   
@@ -136,10 +136,10 @@ The test consists of multiple repetitions of four the kernels, and the best resu
 
 修改测试所有Array大小N，80000000大概使用1.8G内存空间  
 修改测试次数NTIMES  
-![屏幕快照 20190319 14.35.51.png](0)  
+![/Users/Leanna/Desktop/屏幕快照 20190319 14.35.51.png](0)  
 
 `vim Makefile`   
-![屏幕快照 20190319 14.38.17.png](1)
+![/Users/Leanna/Desktop/屏幕快照 20190319 14.38.17.png](1)
 
 ------
 ### FIO
