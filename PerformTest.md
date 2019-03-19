@@ -105,11 +105,25 @@ my $testCats = {
 ```
 ------
 ### coremark
-### Stream
+### Stream  
+The STREAM benchmark is a simple synthetic benchmark program that measures sustainable memory bandwidth (in MB/s) and the corresponding computation rate for simple vector kernels.  
+  
+The table below shows how many Bytes and FLOPs are counted in each iteration of the STREAM loops.  
+  
+The test consists of multiple repetitions of four the kernels, and the best results of (typically) 10 trials are chosen.  
+
+    ------------------------------------------------------------------
+    name        kernel                  bytes/iter      FLOPS/iter
+    ------------------------------------------------------------------
+    COPY:       a(i) = b(i)                 16              0
+    SCALE:      a(i) = q*b(i)               16              1
+    SUM:        a(i) = b(i) + c(i)          24              1
+    TRIAD:      a(i) = b(i) + q*c(i)        24              2
+    ------------------------------------------------------------------
+
 #### 1 下载地址
 [http://www.cs.virginia.edu/stream/ref.html#start](http://www.cs.virginia.edu/stream/ref.html#start)
-http://www.nersc.gov/users/computational-systems/cori/nersc-8-procurement/trinity-nersc-8-rfp/nersc-8-trinity-benchmarks/stream/#toc-anchor-2]()
-
+[http://www.nersc.gov/users/computational-systems/cori/nersc-8-procurement/trinity-nersc-8-rfp/nersc-8-trinity-benchmarks/stream/#toc-anchor-2]([http://www.nersc.gov/users/computational-systems/cori/nersc-8-procurement/trinity-nersc-8-rfp/nersc-8-trinity-benchmarks/stream/#toc-anchor-2)  
 #### 2 安装和运行
 #### 3 参数和结果说明
 
