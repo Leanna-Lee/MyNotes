@@ -123,9 +123,8 @@ The test consists of multiple repetitions of four the kernels, and the best resu
     TRIAD:      a(i) = b(i) + q*c(i)        24              2
     ------------------------------------------------------------------
 
-#### 1 下载地址
-[http://www.cs.virginia.edu/stream/ref.html#start](http://www.cs.virginia.edu/stream/ref.html#start) 
-[http://www.nersc.gov/users/computational-systems/cori/nersc-8-procurement/trinity-nersc-8-rfp/nersc-8-trinity-benchmarks/stream/#toc-anchor-2](http://www.nersc.gov/users/computational-systems/cori/nersc-8-procurement/trinity-nersc-8-rfp/nersc-8-trinity-benchmarks/stream/#toc-anchor-2)  
+#### 1 下载地址  
+[http://www.cs.virginia.edu/stream/ref.html#start](http://www.cs.virginia.edu/stream/ref.html#start)
 #### 2 安装和运行  
 `yum -i install gcc	//安装gcc，如果没有`   
 `tar -xvf stream.tar`  
