@@ -80,12 +80,12 @@ Will Run a single-streamed pass, then a 4-streamed pass.
 |Execl Throughput|||||||
 |File Copy 1024 bufsize 2000 mabxblocks|||||||
 |File Copy 256 bufsize 500 maxblocks|||||||
-|File Copy 4096 bufsize 8000 maxblo|||||||
-||||||||
-||||||||
-||||||||
-||||||||
-||||||||
+|File Copy 4096 bufsize 8000 maxblocks|||||||
+|Pipe Throughput|||||||
+|Pipe-based Context Switching|||||||
+|Process Creation|||||||
+|Shell Scripts (1 concurrent)|||||||
+|Shell Scripts (8 concurrent)|||||||
 
 ### coremark
 ### Stream
