@@ -184,5 +184,19 @@ clean:
 ```
 
 ------
-### FIO
+### FIO  
+FIO is an I/O tool meant to be used both for benchmark and stress/hardware verification.   
+
+It has support for different types of I/O engines (sync, mmap, libaio, posixaio, SG v3, splice, null, network, syslet, guasi, solarisaio, and more), I/O priorities (for newer Linux kernels), rate I/O, forked or threaded jobs, and much more.  
+
+It can work on block devices as well as files. fio accepts job descriptions in a simple-to-understand text format. Several example job files are included. fio displays all sorts of I/O performance information, including complete IO latencies and percentiles.   
+
+Fio is in wide use in many places, for both benchmarking, QA, and verification purposes. It supports Linux, FreeBSD, NetBSD, OpenBSD, OS X, OpenSolaris, AIX, HP-UX, Android, and Windows.
+#### 1 下载地址
+#### 2 安装和运行
+#### 3 参数和结果说明
+
+---
 ### iPerf3
+#### 1 下载地址
+#### 2 
