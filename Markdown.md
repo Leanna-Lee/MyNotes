@@ -1,7 +1,7 @@
 ***[Markdown语法](https://github.com/Leanna-Lee/MyNotes/blob/master/Markdown.md#markdown%E8%AF%AD%E6%B3%95)***  
-- [标题](https://github.com/Leanna-Lee/MyNotes#%E6%A0%87%E9%A2%98)  
-- [换行](https://github.com/Leanna-Lee/MyNotes#%E6%8D%A2%E8%A1%8C)  
-- [字体](https://github.com/Leanna-Lee/MyNotes#%E5%AD%97%E4%BD%93)  
+- [标题](https://github.com/Leanna-Lee/MyNotes/blob/master/Markdown.md#%E6%A0%87%E9%A2%98)  
+- [换行](https://github.com/Leanna-Lee/MyNotes/blob/master/Markdown.md#%E6%8D%A2%E8%A1%8C)  
+- [字体](https://github.com/Leanna-Lee/MyNotes/blob/master/Markdown.md#%E5%AD%97%E4%BD%93)  
 - [引用](https://github.com/Leanna-Lee/MyNotes#%E5%BC%95%E7%94%A8)  
 - [代码](https://github.com/Leanna-Lee/MyNotes#%E4%BB%A3%E7%A0%81)  
   - [单行代码](https://github.com/Leanna-Lee/MyNotes#%E5%8D%95%E8%A1%8C%E4%BB%A3%E7%A0%81)
