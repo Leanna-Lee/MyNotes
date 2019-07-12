@@ -12,6 +12,8 @@
 - 内存带宽：`Stream`
 - 磁盘吞吐：`FIO`
 - 网络带宽：`iPerf3`
+- Windows操作系统：WinSAT
+  Windows System Assessment Tools
 ## 常用工具
 ### UnixBench  
 UnixBench is the original BYTE UNIX benchmark suite, updated and revised by many people over the years.  
