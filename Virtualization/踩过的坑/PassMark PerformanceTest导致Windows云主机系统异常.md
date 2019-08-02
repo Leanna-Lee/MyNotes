@@ -5,7 +5,7 @@
 PerformanceTest9.0 本身的bug，其需要获取 msr的值，此功能 qemu  并未提供。在宿主机上执行`dmesg | grep kvm`可看到如下报错信息：  
 `kvm [4326]: vcpu0 unhandled rdmsr: 0xce`
 ## 解决方法
-MSR：Model Specific Register
+MSR：Model Specific Register  
 两种可选方法解决此问题：
 1. 换成 PerformanceTest7.0；  
 2. 在宿主机上修改此参数：  
