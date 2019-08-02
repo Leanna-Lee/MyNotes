@@ -205,6 +205,9 @@ Fio is in wide use in many places, for both benchmarking, QA, and verification p
 fio -name=/mnt/test_io -direct=1 -ioengine=libaio -group_reporting=1 -rw=randread -bs=128K -size=16G -numjobs=4 -iodepth=64  
 
 后台执行可使用 nohup <command> &
+```  
+```
+
 ```
 - 若运行报错，安装libaio-devl
 `yum install libaio-devel`
