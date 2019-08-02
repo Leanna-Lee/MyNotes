@@ -14,8 +14,9 @@
 - CPU 并发/并行处理时因为临界区同步频次过高导致的锁竞争。
 ```
 使用top查看宿主机和虚拟机的CPU利用率；
-使用perf查看调度延迟
+使用perf查看调度延迟；
 perf top -p <vhost_pid>
-
+使用dmesg查看系统信息；
+dmesg | grep "vhost_num (post" | grep -o 'CPU#[0-9]*' | sort | uni
 ```
 　
