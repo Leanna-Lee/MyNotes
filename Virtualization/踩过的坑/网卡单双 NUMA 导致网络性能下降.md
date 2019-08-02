@@ -17,6 +17,7 @@
 使用perf查看调度延迟；
 perf top -p <vhost_pid>
 使用dmesg查看系统信息；
-dmesg | grep "vhost_num (post" | grep -o 'CPU#[0-9]*' | sort | uni
+dmesg | grep "vhost_num (post" | grep -o 'CPU#[0-9]*' | sort | uniq -c
 ```
+通过perf
 　
