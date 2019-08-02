@@ -207,7 +207,8 @@ fio -name=/mnt/test_io -direct=1 -ioengine=libaio -group_reporting=1 -rw=randrea
 后台执行可使用 nohup <command> &
 ```  
 ```
-
+在windows中运行fio
+fio -name=mytest -filename=e: -direct=1 -ioengine=windowsaio -thread=1 -group_reporting=1 -rw=randwrite -bs=4K -size=16G -iodepth=32 -runtime=300
 ```
 - 若运行报错，安装libaio-devl
 `yum install libaio-devel`
@@ -234,7 +235,8 @@ group_reporting      #关于显示结果的，汇总每个进程的信息
 Results Analysis
 bw        #磁盘吞吐量
 iops      #磁盘每秒读写次数
-lat       #响应时延
+lat       #响应时延  
+runtime   #测试时长
 ```
 #### 4 一些注意事项
 测试所需磁盘大小 = size * numjobs  
