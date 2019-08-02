@@ -197,7 +197,9 @@ Fio is in wide use in many places, for both benchmarking, QA, and verification p
 #### 1 下载地址  
 [http://freshmeat.sourceforge.net/projects/fio](http://freshmeat.sourceforge.net/projects/fio)  
 [https://github.com/axboe/fio/](https://github.com/axboe/fio/)  
-#### 
+##### Windows版本  
+[https://bsdio.com/fio/](https://bsdio.com/fio/)  
+[https://bsdio.com/files/fio/releases/fio-3.13-x64.msi](https://bsdio.com/files/fio/releases/fio-3.13-x64.msi) 
 #### 2 安装和运行
 （1）centOS yum 源直接安装 `yum install -y fio`  
 （2）rpm 包安装 `rpm -ivh fio-xxx-xxx.x86_64.rpm`  
