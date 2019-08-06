@@ -132,7 +132,9 @@ Latency (ms):
 Threads fairness:
     events (avg/stddev):           8310.5000/22.50   #平均每个线程完成8310.5轮events，标准差22.50   
     execution time (avg/stddev):   29.9885/0.00   # 平均每个线程执行时间29.9885秒，标准差0
-```
+```  
+>event：完成了 N 轮的素数计算
+stddev（标准差）：在相同时间内，多个线程分别完成的素数计算次数是否稳定。如果数值越低，则表示多个线程的结果越接近(即越稳定)。该参数对于单线程无意义。
 #### 2 Memory
 #### 3 Fileio
 
