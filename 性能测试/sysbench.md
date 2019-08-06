@@ -242,7 +242,8 @@ Creating file test_file.1
 Creating file test_file.2    
 Creating file test_file.3   
 17179869184 bytes written in 14.84 seconds (1104.41 MiB/sec).      
-
+```   
+```   
 # 线程为1，bs=512K，对4个4G的文件进行随机读测试
 # sysbench --file-total-size=16G --file-num=4 --file-test-mode=rndrd --file-block-size=512K --time=300 fileio run   
 sysbench 1.0.17 (using system LuaJIT 2.0.4)   
@@ -291,7 +292,8 @@ Latency (ms):
 Threads fairness:
     events (avg/stddev):           237871.0000/0.00   
     execution time (avg/stddev):   299.6992/0.00   
-
+```   
+```   
 # 线程为1，bs=512K，对其中1个4G的文件进行随机读测试
 # sysbench --file-total-size=4G --file-num=1 --file-test-mode=rndrd --file-block-size=512K --time=300 fileio run
 sysbench 1.0.17 (using system LuaJIT 2.0.4)   
@@ -340,7 +342,14 @@ Latency (ms):
 Threads fairness:
     events (avg/stddev):           811771.0000/0.00
     execution time (avg/stddev):   299.2882/0.00
+```   
 ```
+# 回收测试文件   
+# sysbench --file-total-size=16G --file-num=4 fileio cleanup   
+sysbench 1.0.17 (using system LuaJIT 2.0.4)
+
+Removing test files..
+```   
 >传统的 UNIX 实现在内核中设有缓冲区高速缓存或页面高速缓存，大多数磁盘I/O都通过缓冲进行。当将数据写入文件时，内核通常先将该数据复制到其中一个缓冲区中，如果该缓冲区尚未写满，则并不将其排入输出队列，而是等待其写满或者当内核需要重用该缓冲区以便存放其它磁盘块数据时，再将该缓冲排入输出队列，然后待其到达队首时，才进行实际的I/O操作。这种输出方式被称为延迟写（delayed write）。   
 延迟写减少了磁盘读写次数，但是却降低了文件内容的更新速度，使得欲写到文件中的数据在一段时间内并没有写到磁盘上。当系统发生故障时，这种延迟可能造成文件更新内容的丢失。为了保证磁盘上实际文件系统与缓冲区高速缓存中内容的一致性，UNIX 系统提供了 sync、fsync 和 fdatasync 三个函数。   
 sync 函数只是将所有修改过的块缓冲区排入写队列，然后就返回，它并不等待实际写磁盘操作结束。通常称为update的系统守护进程会周期性地（一般每隔30秒）调用sync函数。这就保证了定期冲洗内核的块缓冲区。命令sync(1)也调用sync函数。   
