@@ -109,14 +109,14 @@ Number of threads: 2
 Initializing random number generator from current time  
 
 
-Prime numbers limit: 20000  
+Prime numbers limit: 20000   # 每个线程每轮产生的素数上限均为2万个   
 
 Initializing worker threads...  
 
 Threads started!  
 
 CPU speed:  
-    events per second:   553.94  
+    events per second:   553.94   # 每个线程每秒完成了553.94轮计算 
 
 General statistics:  
     total time:                          30.0032s  
