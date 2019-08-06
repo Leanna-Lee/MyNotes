@@ -90,7 +90,13 @@ Compiled-in tests:
 See 'sysbench <testname> help' for a list of options for each test.
 ```  
 #### 1 CPU
+```
+# sysbench cpu help
+sysbench 1.0.17 (using system LuaJIT 2.0.4)  
 
+cpu options:
+  --cpu-max-prime=N upper limit for primes generator [10000]
+```
 #### 2 Memory
 #### 3 Fileio
 
