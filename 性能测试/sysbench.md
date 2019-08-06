@@ -215,7 +215,7 @@ fileio options:
   --file-num=N                  number of files to create [128]   
   --file-block-size=N           block size to use in all IO operations [16384]   
   --file-total-size=SIZE        total size of files to create [2G]   
-  --file-test-mode=STRING       test mode {seqwr, seqrewr, seqrd, rndrd, rndwr, rndrw}   
+  --file-test-mode=STRING       test mode {seqwr, seqrewr, seqrd, rndrd, rndwr, rndrw}   # 顺序写、顺序读写、顺序读 
   --file-io-mode=STRING         file operations mode {sync,async,mmap} [sync]   
   --file-async-backlog=N        number of asynchronous operatons to queue per thread [128]   
   --file-extra-flags=[LIST,...] list of additional flags to use to open files {sync,dsync,direct} []   
