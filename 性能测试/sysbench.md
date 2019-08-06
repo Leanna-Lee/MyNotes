@@ -139,7 +139,7 @@ stddev（标准差）：在相同时间内，多个线程分别完成的素数�
 - 相同 event 数，比较时间；
 - 时间和 event 数都相同，比较stddev（标准差）。
 #### 2 Memory  
-sysbench 的内存测试，以内存缓冲区 memory-block-siz 大小为单位，重复进行内存读或写操作，直到达到指定大小（memory-total-size）。
+sysbench 的内存测试，以内存缓冲区 memory-block-siz 大小为单位，重复进行内存读或写操作，直到达到指定大小 memory-total-size。
 ```
 # sysbench memory help  
 sysbench 1.0.17 (using system LuaJIT 2.0.4)  
@@ -150,7 +150,7 @@ memory options:
   --memory-scope=STRING       memory access scope {global,local} [global]  
   --memory-hugetlb[=on|off]   allocate memory from HugeTLB pool [off]  
   --memory-oper=STRING        type of memory operations {read, write, none} [write]  
-  --memory-access-mode=STRING memory access mode {seq,rnd} [seq]  
+  --memory-access-mode=STRING memory access mode {seq,rnd} [seq]   # 顺序读写、随机读写  
 ```
 #### 3 Fileio
 
