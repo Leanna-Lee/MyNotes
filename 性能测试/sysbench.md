@@ -215,10 +215,10 @@ fileio options:
   --file-num=N                  number of files to create [128]   
   --file-block-size=N           block size to use in all IO operations [16384]   
   --file-total-size=SIZE        total size of files to create [2G]   
-  --file-test-mode=STRING       test mode {seqwr, seqrewr, seqrd, rndrd, rndwr, rndrw}   # 顺序写、顺序读写、顺序读 
-  --file-io-mode=STRING         file operations mode {sync,async,mmap} [sync]   
+  --file-test-mode=STRING       test mode {seqwr, seqrewr, seqrd, rndrd, rndwr, rndrw}   # 顺序写、顺序读写、顺序读，随机读、随机写、随机读写    
+  --file-io-mode=STRING         file operations mode {sync,async,mmap} [sync]   # 文件操作模式，同步、异步、map映射   
   --file-async-backlog=N        number of asynchronous operatons to queue per thread [128]   
-  --file-extra-flags=[LIST,...] list of additional flags to use to open files {sync,dsync,direct} []   
+  --file-extra-flags=[LIST,...] list of additional flags to use to open files {sync,dsync,direct} []   # 使用额外的标志来打开文件，默认为空   
   --file-fsync-freq=N           do fsync() after this number of requests (0 - don't use fsync()) [100]   
   --file-fsync-all[=on|off]     do fsync() after each write operation [off]   
   --file-fsync-end[=on|off]     do fsync() at the end of test [on]   
