@@ -228,10 +228,10 @@ fileio options:
 ```   
 使用 fileio 时，需要创建一组测试文件，测试文件需要大于可用内存的大小，避免文件缓存在内存中影响结果。   
 测试流程为：准备测试文件 -> 测试 -> 回收测试文件，命令如下：
-
-**举个例子：**
-**创建4个大小为4G，总共16G的文件用于测试**
-# sysbench --file-total-size=16G --file-num=4 fileio prepare   
+```
+举个例子：
+创建4个大小为4G，总共16G的文件用于测试   
+# sysbench --file-total-size=16G --file-num=4 fileio prepare
 sysbench 1.0.17 (using system LuaJIT 2.0.4)   
 
 4 files, 4194304Kb each, 16384Mb total   
