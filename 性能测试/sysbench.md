@@ -96,7 +96,11 @@ sysbench 的 CPU 测试是在指定时间内，循环进行素数计算。
 sysbench 1.0.17 (using system LuaJIT 2.0.4)  
 
 cpu options:  
-  --cpu-max-prime=N upper limit for primes generator [10000]  
+  --cpu-max-prime=N upper limit for primes generator [10000]   
+
+举个例子：  
+# 素数生成 200
+# sysbench cpu run --threads=2 --time=30 --cpu-max-prime=20000  
 ```
 #### 2 Memory
 #### 3 Fileio
