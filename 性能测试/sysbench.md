@@ -198,6 +198,10 @@ Threads fairness:
     events (avg/stddev):           524288.0000/0.00   
     execution time (avg/stddev):   0.3736/0.00   
 ```   
+>memory bandwidth = block size * operations   
+4KiB * 524288 / 1024 = 2048MiB   
+- block size 取值越大，内存带宽越大；   
+- block size 达到某一值时，内存带宽
 #### 3 Fileio
 
 
