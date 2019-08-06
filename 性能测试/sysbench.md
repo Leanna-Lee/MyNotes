@@ -148,7 +148,7 @@ memory options:
   --memory-block-size=SIZE    size of memory block for test [1K]  
   --memory-total-size=SIZE    total size of data to transfer [100G]  
   --memory-scope=STRING       memory access scope {global,local} [global]  
-  --memory-hugetlb[=on|off]   allocate memory from HugeTLB pool [off]  
+  --memory-hugetlb[=on|off]   allocate memory from HugeTLB pool [off]   # 是否使用大页
   --memory-oper=STRING        type of memory operations {read, write, none} [write]  
   --memory-access-mode=STRING memory access mode {seq,rnd} [seq]   # 顺序读写、随机读写  
 ```
