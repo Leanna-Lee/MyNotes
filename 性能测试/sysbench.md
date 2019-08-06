@@ -90,6 +90,7 @@ Compiled-in tests:
 See 'sysbench <testname> help' for a list of options for each test.
 ```  
 #### 1 CPU
+sysbench 的 cpu 测试是在指定时间内，循环进行素数计算。
 ```
 # sysbench cpu help
 sysbench 1.0.17 (using system LuaJIT 2.0.4)  
