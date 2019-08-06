@@ -16,5 +16,8 @@ https://github.com/akopytov/sysbench#sysbench
 `sysbench [options]... [testname] [command]`  
 testname: fileio cpu memory threads mutex  
 Commands implemented by most tests: prepare run cleanup help
+#### 1 cpu
+#### 2 memory
+#### 3 fileio
 
 
