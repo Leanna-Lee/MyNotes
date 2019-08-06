@@ -139,7 +139,7 @@ stddev（标准差）：在相同时间内，多个线程分别完成的素数�
 - 相同 event 数，比较时间；
 - 时间和 event 数都相同，比较stddev（标准差）。
 #### 2 Memory  
-当在 sysbench 中进行内存测试时，会分配一个内存缓冲区并在此执行读写操作，每次操作都会读完或写满缓冲区。然后重复此操作直到达到指定大小（--memory-total-size）。可以提供多个线程（--threads），不同的缓冲区大小（--memory-block-size）和请求类型（读或写，顺序或随机）。
+sysbench 的内存测试，以内存缓冲区 memory-block-siz 大小为单位，重复进行内存读或写操作，直到达到指定大小（memory-total-size）。
 ```
 # sysbench memory help  
 sysbench 1.0.17 (using system LuaJIT 2.0.4)  
