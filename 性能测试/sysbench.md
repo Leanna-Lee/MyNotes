@@ -14,7 +14,7 @@ https://github.com/akopytov/sysbench#sysbench
 - RHEL/CentOS: `yum install sysbench`  
 ### Usage
 `sysbench [options]... [testname] [command]`  
-
+testname: fileio cpu memory threads mutex
 Commands implemented by most tests: prepare run cleanup help
 
 
