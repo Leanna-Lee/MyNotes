@@ -152,6 +152,7 @@ memory options:
   --memory-oper=STRING        type of memory operations {read, write, none} [write]  
   --memory-access-mode=STRING memory access mode {seq,rnd} [seq]   # 顺序读写、随机读写  
 ```
+
 #### 3 Fileio
 
 
