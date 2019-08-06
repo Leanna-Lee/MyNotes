@@ -228,9 +228,9 @@ fileio options:
 ```   
 使用 fileio 时，需要创建一组测试文件，测试文件需要大于可用内存的大小，避免文件缓存在内存中影响结果。   
 测试流程为：准备测试文件 -> 测试 -> 回收测试文件，命令如下：
-```
-举个例子：
-# 创建4个大小为4G，总共16G的文件用于测试
+
+**举个例子：**
+**创建4个大小为4G，总共16G的文件用于测试**
 # sysbench --file-total-size=16G --file-num=4 fileio prepare   
 sysbench 1.0.17 (using system LuaJIT 2.0.4)   
 
@@ -292,8 +292,54 @@ Threads fairness:
     events (avg/stddev):           237871.0000/0.00   
     execution time (avg/stddev):   299.6992/0.00   
 
+# 线程为1，bs=512K，对其中1个4G的文件进行随机读测试
+# sysbench --file-total-size=4G --file-num=1 --file-test-mode=rndrd --file-block-size=512K --time=300 fileio run
+sysbench 1.0.17 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
 
 
+Extra file open flags: (none)
+1 files, 4GiB each
+4GiB total file size
+Block size 512KiB
+Number of IO requests: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random read test
+Initializing worker threads...
+
+Threads started!
+
+
+
+File operations:
+    reads/s:                      2705.74
+    writes/s:                     0.00
+    fsyncs/s:                     0.00
+
+Throughput:
+    read, MiB/s:                  1352.87
+    written, MiB/s:               0.00
+
+General statistics:
+    total time:                          300.0158s
+    total number of events:              811771
+
+Latency (ms):
+         min:                                    0.05
+         avg:                                    0.37
+         max:                                   24.80
+         95th percentile:                        1.73
+         sum:                               299288.24
+
+Threads fairness:
+    events (avg/stddev):           811771.0000/0.00
+    execution time (avg/stddev):   299.2882/0.00
 ```
 >传统的 UNIX 实现在内核中设有缓冲区高速缓存或页面高速缓存，大多数磁盘I/O都通过缓冲进行。当将数据写入文件时，内核通常先将该数据复制到其中一个缓冲区中，如果该缓冲区尚未写满，则并不将其排入输出队列，而是等待其写满或者当内核需要重用该缓冲区以便存放其它磁盘块数据时，再将该缓冲排入输出队列，然后待其到达队首时，才进行实际的I/O操作。这种输出方式被称为延迟写（delayed write）。   
 延迟写减少了磁盘读写次数，但是却降低了文件内容的更新速度，使得欲写到文件中的数据在一段时间内并没有写到磁盘上。当系统发生故障时，这种延迟可能造成文件更新内容的丢失。为了保证磁盘上实际文件系统与缓冲区高速缓存中内容的一致性，UNIX 系统提供了 sync、fsync 和 fdatasync 三个函数。   
