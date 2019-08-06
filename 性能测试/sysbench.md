@@ -139,6 +139,18 @@ stddev（标准差）：在相同时间内，多个线程分别完成的素数�
 - 相同 event 数，比较时间；
 - 时间和 event 数都相同，比较stddev（标准差）。
 #### 2 Memory
+```
+# sysbench memory help  
+sysbench 1.0.17 (using system LuaJIT 2.0.4)  
+
+memory options:  
+  --memory-block-size=SIZE    size of memory block for test [1K]  
+  --memory-total-size=SIZE    total size of data to transfer [100G]  
+  --memory-scope=STRING       memory access scope {global,local} [global]  
+  --memory-hugetlb[=on|off]   allocate memory from HugeTLB pool [off]  
+  --memory-oper=STRING        type of memory operations {read, write, none} [write]  
+  --memory-access-mode=STRING memory access mode {seq,rnd} [seq]  
+```
 #### 3 Fileio
 
 
