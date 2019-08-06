@@ -1,3 +1,7 @@
+***[sysbench](https://github.com/Leanna-Lee/MyNotes/blob/master/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/sysbench.md#sysbench)***   
+- [CPU](https://github.com/Leanna-Lee/MyNotes/blob/master/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/sysbench.md#1-cpu)   
+- [Memory](https://github.com/Leanna-Lee/MyNotes/blob/master/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/sysbench.md#2-memory)   
+- [fileio](https://github.com/Leanna-Lee/MyNotes/blob/master/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/sysbench.md#3-fileio)   
 # sysbench
 sysbench is a scriptable multi-threaded benchmark tool based on LuaJIT. It is most frequently used for database benchmarks, but can also be used to create arbitrarily complex workloads that do not involve a database server.  
 sysbench comes with the following bundled benchmarks:  
@@ -202,6 +206,6 @@ Threads fairness:
 4KiB * 524288 / 1024 = 2048MiB   
 - block size 取值越大，内存带宽越大；   
 - block size 达到某一值时，内存带宽达到物理上限。（block size 可尝试取值 8K，128K，512K，1M 等）   
-#### 3 Fileio
+#### 3 fileio
 
 
