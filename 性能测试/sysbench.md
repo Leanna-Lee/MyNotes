@@ -201,7 +201,7 @@ Threads fairness:
 >memory bandwidth = block size * operations   
 4KiB * 524288 / 1024 = 2048MiB   
 - block size 取值越大，内存带宽越大；   
-- block size 达到某一值时，内存带宽
+- block size 达到某一值时，内存带宽达到物理上限。（block size 可尝试取值 8K，128K，512K，1M 等）   
 #### 3 Fileio
 
 
