@@ -14,8 +14,7 @@ https://github.com/akopytov/sysbench#sysbench
 - RHEL/CentOS: `yum install sysbench`  
 ### Usage
 `sysbench [options]... [testname] [command]`    
-```
-testname: fileio cpu memory threads mutex    
+```    
 Commands implemented by most tests: prepare run cleanup help  
 General options:
   --threads=N                     number of threads to use [1]  
@@ -65,28 +64,28 @@ mysql options:
   --mysql-port=[LIST,...]          MySQL server port [3306]  
   --mysql-socket=[LIST,...]        MySQL socket  
   --mysql-user=STRING              MySQL user [sbtest]  
-  --mysql-password=STRING          MySQL password []
-  --mysql-db=STRING                MySQL database name [sbtest]
-  --mysql-ssl[=on|off]             use SSL connections, if available in the client library [off]
-  --mysql-ssl-cipher=STRING        use specific cipher for SSL connections []
-  --mysql-compression[=on|off]     use compression, if available in the client library [off]
-  --mysql-debug[=on|off]           trace all client library calls [off]
-  --mysql-ignore-errors=[LIST,...] list of errors to ignore, or "all" [1213,1020,1205]
-  --mysql-dry-run[=on|off]         Dry run, pretend that all MySQL client API calls are successful without executing them [off]
+  --mysql-password=STRING          MySQL password []  
+  --mysql-db=STRING                MySQL database name [sbtest]  
+  --mysql-ssl[=on|off]             use SSL connections, if available in the client library [off]  
+  --mysql-ssl-cipher=STRING        use specific cipher for SSL connections []  
+  --mysql-compression[=on|off]     use compression, if available in the client library [off]  
+  --mysql-debug[=on|off]           trace all client library calls [off]  
+  --mysql-ignore-errors=[LIST,...] list of errors to ignore, or "all" [1213,1020,1205]  
+  --mysql-dry-run[=on|off]         Dry run, pretend that all MySQL client API calls are successful without executing them [off]  
 
 pgsql options:
-  --pgsql-host=STRING     PostgreSQL server host [localhost]
-  --pgsql-port=N          PostgreSQL server port [5432]
-  --pgsql-user=STRING     PostgreSQL user [sbtest]
-  --pgsql-password=STRING PostgreSQL password []
-  --pgsql-db=STRING       PostgreSQL database name [sbtest]
+  --pgsql-host=STRING     PostgreSQL server host [localhost]  
+  --pgsql-port=N          PostgreSQL server port [5432]  
+  --pgsql-user=STRING     PostgreSQL user [sbtest]  
+  --pgsql-password=STRING PostgreSQL password []  
+  --pgsql-db=STRING       PostgreSQL database name [sbtest]  
 
 Compiled-in tests:
-  fileio - File I/O test
-  cpu - CPU performance test
-  memory - Memory functions speed test
-  threads - Threads subsystem performance test
-  mutex - Mutex performance test
+  fileio - File I/O test  
+  cpu - CPU performance test  
+  memory - Memory functions speed test  
+  threads - Threads subsystem performance test  
+  mutex - Mutex performance test  
 
 See 'sysbench <testname> help' for a list of options for each test.
 ```  
