@@ -99,8 +99,39 @@ cpu options:
   --cpu-max-prime=N upper limit for primes generator [10000]   
 
 举个例子：  
-# 素数生成 200
-# sysbench cpu run --threads=2 --time=30 --cpu-max-prime=20000  
+# 素数生成上限 20000，2个线程，执行时间30秒
+# sysbench cpu run --threads=2 --time=30 --cpu-max-prime=20000    
+
+sysbench 1.0.17 (using system LuaJIT 2.0.4)  
+
+Running the test with following options:  
+Number of threads: 2  
+Initializing random number generator from current time  
+
+
+Prime numbers limit: 20000  
+
+Initializing worker threads...  
+
+Threads started!  
+
+CPU speed:  
+    events per second:   553.94  
+
+General statistics:  
+    total time:                          30.0032s  
+    total number of events:              16621  
+
+Latency (ms):  
+         min:                                    3.51   
+         avg:                                    3.61  
+         max:                                   32.81  
+         95th percentile:                        3.68  
+         sum:                                59976.97  
+
+Threads fairness:
+    events (avg/stddev):           8310.5000/22.50  
+    execution time (avg/stddev):   29.9885/0.00  
 ```
 #### 2 Memory
 #### 3 Fileio
