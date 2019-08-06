@@ -116,15 +116,15 @@ Initializing worker threads...
 Threads started!  
 
 CPU speed:  
-    events per second:   553.94   # 每个线程每秒完成了553.94轮计算 
+    events per second:   553.94   # 2个线程每秒完成了553.94轮计算 
 
 General statistics:  
     total time:                          30.0032s  
     total number of events:              16621  
 
 Latency (ms):  
-         min:                                    3.51   
-         avg:                                    3.61  
+         min:                                    3.51   # 完成1次event最小耗时3.51毫秒    
+         avg:                                    3.61   # 
          max:                                   32.81  
          95th percentile:                        3.68  
          sum:                                59976.97  
