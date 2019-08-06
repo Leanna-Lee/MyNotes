@@ -124,14 +124,14 @@ General statistics:
 
 Latency (ms):  
          min:                                    3.51   # 完成1次event最小耗时3.51毫秒    
-         avg:                                    3.61   # 
-         max:                                   32.81  
-         95th percentile:                        3.68  
+         avg:                                    3.61   # 完成1次event平均耗时3.61毫秒   
+         max:                                   32.81   # 完成1次event最大耗时32.81毫秒 
+         95th percentile:                        3.68   # 95%的events在3.68毫秒内完成
          sum:                                59976.97  
 
 Threads fairness:
-    events (avg/stddev):           8310.5000/22.50  
-    execution time (avg/stddev):   29.9885/0.00  
+    events (avg/stddev):           8310.5000/22.50   #平均每个线程完成8310.5轮events，标准差22.50   
+    execution time (avg/stddev):   29.9885/0.00   # 平均每个线程执行时间29.9885秒，标准差0
 ```
 #### 2 Memory
 #### 3 Fileio
