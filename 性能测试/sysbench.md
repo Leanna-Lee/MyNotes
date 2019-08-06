@@ -294,16 +294,16 @@ Threads fairness:
 
 # 线程为1，bs=512K，对其中1个4G的文件进行随机读测试
 # sysbench --file-total-size=4G --file-num=1 --file-test-mode=rndrd --file-block-size=512K --time=300 fileio run
-sysbench 1.0.17 (using system LuaJIT 2.0.4)
+sysbench 1.0.17 (using system LuaJIT 2.0.4)   
 
-Running the test with following options:
-Number of threads: 1
-Initializing random number generator from current time
+Running the test with following options:   
+Number of threads: 1   
+Initializing random number generator from current time   
 
 
-Extra file open flags: (none)
-1 files, 4GiB each
-4GiB total file size
+Extra file open flags: (none)   
+1 files, 4GiB each   
+4GiB total file size   
 Block size 512KiB
 Number of IO requests: 0
 Read/Write ratio for combined random IO test: 1.50
