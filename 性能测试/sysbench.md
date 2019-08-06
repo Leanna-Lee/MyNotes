@@ -11,7 +11,10 @@ sysbench comes with the following bundled benchmarks:
 https://github.com/akopytov/sysbench#sysbench  
 
 ### 安装
-- RHEL/CentOS:
-`yum install sysbench`
+- RHEL/CentOS: `yum install sysbench`  
+### Usage
+`sysbench [options]... [testname] [command]`  
+
+Commands implemented by most tests: prepare run cleanup help
 
 
