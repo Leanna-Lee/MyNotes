@@ -152,7 +152,11 @@ memory options:
   --memory-oper=STRING        type of memory operations {read, write, none} [write]  
   --memory-access-mode=STRING memory access mode {seq,rnd} [seq]   # 顺序读写、随机读写  
 ```
+- when you execute a program the varaibles are allocated memory space. This memory is valid until the program is running. After the execution of the program this memory is releasd.   
 
+- As the name says global memory is available across the programs. U can store something in global memory in one program and then read it from other program.   
+
+- SAP memory is something above this ... Its is memory space allocated for all SAP applications and ABAP memory is memory allocated for ABAP objects like reports, function modules etc.   
 #### 3 Fileio
 
 
