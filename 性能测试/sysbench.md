@@ -159,45 +159,45 @@ memory options:
 - SAP memory is something above this ... Its is memory space allocated for all SAP applications and ABAP memory is memory allocated for ABAP objects like reports, function modules etc.   
 ```
 举个例子：  
-# 线程为1，内存缓冲区大小
-sysbench memory run --threads=1 --memory-block-size=4K --memory-oper=write --memory-access-mode=seq --memory-total-size=2G
-sysbench 1.0.17 (using system LuaJIT 2.0.4)
+# 线程为 1，内存缓冲区大小 4KB，顺序写内存 2GB
+sysbench memory run --threads=1 --memory-block-size=4K --memory-oper=write --memory-access-mode=seq --memory-total-size=2G   
+sysbench 1.0.17 (using system LuaJIT 2.0.4)   
 
-Running the test with following options:
-Number of threads: 1
-Initializing random number generator from current time
+Running the test with following options:   
+Number of threads: 1   
+Initializing random number generator from current time   
 
 
-Running memory speed test with the following options:
-  block size: 4KiB
-  total size: 2048MiB
-  operation: write
-  scope: global
+Running memory speed test with the following options:   
+  block size: 4KiB   
+  total size: 2048MiB   
+  operation: write   
+  scope: global   
 
-Initializing worker threads...
+Initializing worker threads...   
 
-Threads started!
+Threads started!   
 
-Total operations: 524288 (981794.44 per second)
+Total operations: 524288 (981794.44 per second)   # 内存顺序写操作总数 524288  
 
-2048.00 MiB transferred (3835.13 MiB/sec)
+2048.00 MiB transferred (3835.13 MiB/sec)   # 内存顺序写带宽
 
 
 General statistics:
-    total time:                          0.5319s
-    total number of events:              524288
+    total time:                          0.5319s   
+    total number of events:              524288   
 
 Latency (ms):
          min:                                    0.00
          avg:                                    0.00
          max:                                    0.16
          95th percentile:                        0.00
-         sum:                                  373.55
+         sum:                                  373.55   
 
 Threads fairness:
-    events (avg/stddev):           524288.0000/0.00
-    execution time (avg/stddev):   0.3736/0.00
-```
+    events (avg/stddev):           524288.0000/0.00   
+    execution time (avg/stddev):   0.3736/0.00   
+```   
 #### 3 Fileio
 
 
