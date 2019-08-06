@@ -219,7 +219,7 @@ fileio options:
   --file-io-mode=STRING         file operations mode {sync,async,mmap} [sync]   # 文件操作模式，同步、异步、map映射   
   --file-async-backlog=N        number of asynchronous operatons to queue per thread [128]   
   --file-extra-flags=[LIST,...] list of additional flags to use to open files {sync,dsync,direct} []   # 使用额外的标志来打开文件，默认为空   
-  --file-fsync-freq=N           do fsync() after this number of requests (0 - don't use fsync()) [100]   
+  --file-fsync-freq=N           do fsync() after this number of requests (0 - don't use fsync()) [100]   # 执行fsync()的频率，默认是100    
   --file-fsync-all[=on|off]     do fsync() after each write operation [off]   
   --file-fsync-end[=on|off]     do fsync() at the end of test [on]   
   --file-fsync-mode=STRING      which method to use for synchronization {fsync, fdatasync} [fsync]   
