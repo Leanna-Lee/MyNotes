@@ -14,7 +14,7 @@ superpi/super_pi
 ## 以下为改进版计算 π 算法：  
 **下载地址**  
 
-### Installation
+### Installation / Usage
 ```
 # 解压
 # tar -xvf supper_pi_src.tar
@@ -23,6 +23,10 @@ superpi/super_pi
 # make
 gcc -Wall -pedantic -O -fomit-frame-pointer -funroll-loops pi_fftcs.o fftsg_h.o -lm -static -o pi_css5
 # 运行
+# ./pi_css5 $((1<<20))   //计算2的20次方位π
+# ./pi_css5 $((1<<25))   //计算2的25次方位π
+```   
+使用mpstat查看，此程序在运行时，CPU 用户空间占用100%，内核空间占用基本为0，符合需求。   
+```
 
 ```
-### Usage
