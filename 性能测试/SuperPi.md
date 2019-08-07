@@ -17,6 +17,12 @@ superpi/super_pi
 ### Installation
 ```
 # 解压
-# tar -xvf
+# tar -xvf supper_pi_src.tar
+# 编译，64bit Linux修改Makefile，注释掉 CFLAGS += -march=i686 -malign-doubl
+# cd pi_css5_src/
+# make
+gcc -Wall -pedantic -O -fomit-frame-pointer -funroll-loops pi_fftcs.o fftsg_h.o -lm -static -o pi_css5
+# 运行
+
 ```
 ### Usage
