@@ -10,4 +10,7 @@ superpi/super_pi
 # 计算2的20次方位 π 所需时间
 # ./super_pi 20
 ```
-- 使用 super_pi 计算圆周率时，
+- 使用 mpstat 命令查看 CPU 运行状态，可以看到 super_pi 计算圆周率时，会占用部分内核空间，且计算时间较长。   
+## 以下为改进版计算 π 算法：
+### Installation
+### Usage
