@@ -10,3 +10,4 @@ superpi/super_pi
 # 计算2的20次方位 π 所需时间
 # ./super_pi 20
 ```
+- 使用 super_pi 计算圆周率时，
