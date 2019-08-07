@@ -16,6 +16,7 @@ superpi/super_pi
 
 ### Installation
 ```
-
+# 解压
+# tar -xvf
 ```
 ### Usage
