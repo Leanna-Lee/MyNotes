@@ -205,7 +205,7 @@ Fio is in wide use in many places, for both benchmarking, QA, and verification p
 （2）rpm 包安装 `rpm -ivh fio-xxx-xxx.x86_64.rpm`  
 - 运行  
 ```
-fio -name=/mnt/test_io -direct=1 -ioengine=libaio -group_reporting=1 -rw=randread -bs=128K -size=16G -numjobs=4 -iodepth=64  
+fio -filename= /mnt/fiotest -name=mytest -direct=1 -ioengine=libaio -group_reporting=1 -rw=randread -bs=128K -size=16G -numjobs=1 -iodepth=64 -thread=1 -runtime=300
 
 后台执行可使用 nohup <command> &
 ```  
@@ -218,7 +218,7 @@ fio -name=mytest -filename=e: -direct=1 -ioengine=windowsaio -thread=1 -group_re
 
 #### 3 参数和结果说明  
 ```
-name=/mnt/test_io    #读写测试所在目录，通常选择需要测试的盘的data目录
+filename=/mnt/fiotest    #读写测试所在目录，通常选择需要测试的盘的data目录
 direct=1             #测试过程绕过机器自带的buffer。使测试结果更真实
 iodepth=64           #队列深度
 rw=randwrite         #测试随机写的I/O
