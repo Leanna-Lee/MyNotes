@@ -2,7 +2,8 @@
 - [What is Apache CloudStack](https://github.com/Leanna-Lee/MyNotes/blob/master/CloudStack/CloudStack%E6%9E%B6%E6%9E%84.md#what-is-apache-cloudstack)
 - [Cloud Infrastructure Overview](https://github.com/Leanna-Lee/MyNotes/blob/master/CloudStack/CloudStack%E6%9E%B6%E6%9E%84.md#cloud-infrastructure-overview)
 
-***For more details, please refer to:***      
+***For more details, please refer to:***    
+  
 [http://docs.cloudstack.apache.org/en/latest/conceptsandterminology/concepts.html](http://docs.cloudstack.apache.org/en/latest/conceptsandterminology/concepts.html)
 # CloudStack
 ## What is Apache CloudStack?
@@ -23,4 +24,5 @@ Resources within the cloud are managed as follows:
 - Host: A single compute node within a cluster; often a hypervisor.  
 - Primary Storage: A storage resource typically provided to a single cluster for the actual running of instance disk images. (Zone-wide primary storage is an option, though not typically used.)  
 - Secondary Storage: A zone-wide resource which stores disk templates, ISO images, and snapshots.  
+
 ![regionoverview.png](https://github.com/Leanna-Lee/MyNotes/blob/master/CloudStack/img/region-overview.png)
