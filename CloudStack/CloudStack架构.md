@@ -49,6 +49,12 @@ A zone consists of:
 - One or more pods. Each pod contains one or more clusters of hosts and one or more primary storage servers.
 - A zone may contain one or more primary storage servers, which are shared by all the pods in the zone.
 - Secondary storage, which is shared by all the pods in the zone.
+
+Zones are visible to the end user. When a user starts a guest VM, the user must select a zone for their guest. Users might also be required to copy their private templates to additional zones to enable creation of guest VMs using their templates in those zones.
+
+Zones can be public or private. Public zones are visible to all users. This means that any user may create a guest in that zone. Private zones are reserved for a specific domain. Only users in that domain or its subdomains may create guests in that zone.
+
+Hosts in the same zone are directly accessible to each other without having to go through a firewall. Hosts in different zones can access each other through statically configured VPN tunnels.
 ### About Pods
 ### About Clusters
 ### About Hosts
