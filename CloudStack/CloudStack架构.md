@@ -1,6 +1,12 @@
 ***[CloudStack]()***
 - [What is Apache CloudStack](https://github.com/Leanna-Lee/MyNotes/blob/master/CloudStack/CloudStack%E6%9E%B6%E6%9E%84.md#what-is-apache-cloudstack)
 - [Cloud Infrastructure Overview](https://github.com/Leanna-Lee/MyNotes/blob/master/CloudStack/CloudStack%E6%9E%B6%E6%9E%84.md#cloud-infrastructure-overview)
+  - [About Regions]()
+  - [About Zones]()
+  - [About Pods]()
+  - [About Hosts]()
+  - [About Primary Storage]()
+  - [About Secondary Storage]()
 
 ***For more details, please refer to:***    
   
@@ -30,4 +36,6 @@ Resources within the cloud are managed as follows:
 ### About Zones
 ### About Pods
 ### About Clusters
-### 
+### About Hosts
+### About Primary Storage
+### About Secondary Storage
