@@ -23,4 +23,4 @@ Resources within the cloud are managed as follows:
 - Host: A single compute node within a cluster; often a hypervisor.  
 - Primary Storage: A storage resource typically provided to a single cluster for the actual running of instance disk images. (Zone-wide primary storage is an option, though not typically used.)  
 - Secondary Storage: A zone-wide resource which stores disk templates, ISO images, and snapshots.  
-![regionoverview.png](0)
+![regionoverview.png](https://github.com/Leanna-Lee/MyNotes/blob/master/CloudStack/img/region-overview.png)
