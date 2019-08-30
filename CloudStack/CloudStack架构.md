@@ -2,9 +2,8 @@
 - [What is Apache CloudStack]()
 - [Cloud Infrastructure Overview]()
 
-For more details, pl
-
-
+***For more details, please refer to:***      
+[http://docs.cloudstack.apache.org/en/latest/conceptsandterminology/concepts.html](http://docs.cloudstack.apache.org/en/latest/conceptsandterminology/concepts.html)
 # CloudStack
 ## What is Apache CloudStack?
 Apache CloudStack is an open source Infrastructure-as-a-Service platform that manages and orchestrates pools of storage, network, and computer resources to build a public or private IaaS compute cloud.  
