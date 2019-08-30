@@ -34,14 +34,21 @@ Resources within the cloud are managed as follows:
 
 ![regionoverview.png](https://github.com/Leanna-Lee/MyNotes/blob/master/CloudStack/img/region-overview.png)
 ### About Regions
-To increase reliability of the cloud, you can optionally group resources into multiple geographic regions. A region is the largest available organizational unit within a CloudStack deployment. A region is made up of several availability zones, where each zone is roughly equivalent to a datacenter. Each region is controlled by its own cluster of Management Servers, running in one of the zones. The zones in a region are typically located in close geographical proximity. Regions are a useful technique for providing fault tolerance and disaster recovery.
+To increase reliability of the cloud, you can optionally group resources into multiple geographic regions. A region is the largest available organizational unit within a CloudStack deployment. A region is made up of several availability zones, where each zone is roughly equivalent to a datacenter. Each region is controlled by its own cluster of Management Servers, running in one of the zones. The zones in a region are typically located in close geographical proximity. Regions are a useful technique for providing fault tolerance and disaster recovery.  
 
 By grouping zones into regions, the cloud can achieve higher availability and scalability. User accounts can span regions, so that users can deploy VMs in multiple, widely-dispersed regions. Even if one of the regions becomes unavailable, the services are still available to the end-user through VMs deployed in another region. And by grouping communities of zones under their own nearby Management Servers, the latency of communications within the cloud is reduced compared to managing widely-dispersed zones from a single central Management Server.
+  
+Usage records can also be consolidated and tracked at the region level, creating reports or invoices for each geographic region.  
 
-Usage records can also be consolidated and tracked at the region level, creating reports or invoices for each geographic region.
-
-
+Regions are visible to the end user. When a user starts a guest VM on a particular CloudStack Management Server, the user is implicitly selecting that region for their guest. Users might also be required to copy their private templates to additional regions to enable creation of guest VMs using their templates in those regions.  
 ### About Zones
+A zone is the second largest organizational unit within a CloudStack deployment. A zone typically corresponds to a single datacenter, although it is permissible to have multiple zones in a datacenter. The benefit of organizing infrastructure into zones is to provide physical isolation and redundancy. For example, each zone can have its own power supply and network uplink, and the zones can be widely separated geographically (though this is not required).
+
+A zone consists of:
+
+- One or more pods. Each pod contains one or more clusters of hosts and one or more primary storage servers.
+- A zone may contain one or more primary storage servers, which are shared by all the pods in the zone.
+- Secondary storage, which is shared by all the pods in the zone.
 ### About Pods
 ### About Clusters
 ### About Hosts
