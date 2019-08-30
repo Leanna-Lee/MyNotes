@@ -26,3 +26,8 @@ Resources within the cloud are managed as follows:
 - Secondary Storage: A zone-wide resource which stores disk templates, ISO images, and snapshots.  
 
 ![regionoverview.png](https://github.com/Leanna-Lee/MyNotes/blob/master/CloudStack/img/region-overview.png)
+### About Regions
+### About Zones
+### About Pods
+### About Clusters
+### 
