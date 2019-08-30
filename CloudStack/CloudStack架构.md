@@ -54,7 +54,8 @@ Zones are visible to the end user. When a user starts a guest VM, the user must 
 
 Zones can be public or private. Public zones are visible to all users. This means that any user may create a guest in that zone. Private zones are reserved for a specific domain. Only users in that domain or its subdomains may create guests in that zone.
 
-Hosts in the same zone are directly accessible to each other without having to go through a firewall. Hosts in different zones can access each other through statically configured VPN tunnels.
+Hosts in the same zone are directly accessible to each other without having to go through a firewall. Hosts in different zones can access each other through statically configured VPN tunnels.  
+![zoneoverview.png](https://github.com/Leanna-Lee/MyNotes/blob/master/CloudStack/img/zone-overview.png)
 ### About Pods
 ### About Clusters
 ### About Hosts
