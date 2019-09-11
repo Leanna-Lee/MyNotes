@@ -19,6 +19,8 @@ https://download.csdn.net/download/weixin_41647043/11490791
 
 ### Installation / Usage
 ```
+# yum install gcc
+# yum install glibc-static
 # 解压
 # tar -xvf supper_pi_src.tar
 # 编译，64bit Linux修改Makefile，注释掉 CFLAGS += -march=i686 -malign-doubl
