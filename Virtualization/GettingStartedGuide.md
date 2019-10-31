@@ -1,5 +1,5 @@
 # Getting Started Guide
-**原文请参考：**
+**原文请参考：**  
 [https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_getting_started_guide/index](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/virtualization_getting_started_guide/index)
 ## What is Virtualization?
 Virtualization is a broad computing term used for running software, usually multiple operating systems, concurrently and in isolation from other programs on a single system.  
