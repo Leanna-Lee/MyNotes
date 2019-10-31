@@ -25,4 +25,6 @@ There are several virtualization methods:
 - The hypervisor translates the guest calls to a format that can be used by the host system.
 - Because all calls are translated, this method is slower than paravirtualization.
 #### Containerization
+While KVM virtualization creates a separate instance of OS kernel, operating-system-level virtualization, also known as containerization, operates on top of an existing OS kernel and creates isolated instances of the host OS, known as containers.   
+Containers do not have the versatility of KVM virtualization, but are more lightweight and flexible to handle
 ## Virtualization Solutions
