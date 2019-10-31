@@ -13,6 +13,9 @@ Virtualization is a broad computing term used for running software, usually mult
 
 There are several virtualization methods:  
 #### Full virtualization
+- Uses an unmodified version of the guest operating system.
+- The guest addresses the host's CPU via a channel created by the hypervisor.
+- Because the guest communicates directly with the CPUs, this is the fastest virtualization method.
 #### Paravirtualization
 #### Software virtualization (or emulation)
 #### Containerization
