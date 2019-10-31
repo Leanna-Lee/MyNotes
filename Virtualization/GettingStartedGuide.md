@@ -1,7 +1,9 @@
 ***[Getting Started Guide](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/GettingStartedGuide.md#getting-started-guide)***
 - [What is Virtualization?](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/GettingStartedGuide.md#what-is-virtualization)
-	- [Full virtualization]() 
- - 
+  - [Full virtualization](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/GettingStartedGuide.md#full-virtualization) 
+  - [Paravirtualization](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/GettingStartedGuide.md#paravirtualization)
+  - [Software virtualization](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/GettingStartedGuide.md#software-virtualization-or-emulation)
+  - [Containerization](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/GettingStartedGuide.md#containerization)
 - [Virtualization Solutions](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/GettingStartedGuide.md#virtualization-solutions)
 # Getting Started Guide
 **原文请参考：**  
