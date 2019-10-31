@@ -28,3 +28,7 @@ There are several virtualization methods:
 While KVM virtualization creates a separate instance of OS kernel, operating-system-level virtualization, also known as containerization, operates on top of an existing OS kernel and creates isolated instances of the host OS, known as containers.   
 Containers do not have the versatility of KVM virtualization, but are more lightweight and flexible to handle
 ## Virtualization Solutions
+#### Red Hat Virtualization
+Red Hat Virtualization (RHV) is based on the Kernel-based Virtual Machine (KVM) technology like virtualization on Red Hat Enterprise Linux is, but offers an enhanced array of features. Designed for enterprise-class scalability and performance, it enables management of your entire virtual infrastructure, including hosts, virtual machines, networks, storage, and users from a centralized graphical interface.
+#### Red Hat OpenStack Platform
+Red Hat OpenStack Platform offers an integrated foundation to create, deploy, and scale a secure and reliable public or private OpenStack cloud.  
