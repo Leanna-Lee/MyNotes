@@ -17,10 +17,12 @@ There are several virtualization methods:
 - The guest addresses the host's CPU via a channel created by the hypervisor.
 - Because the guest communicates directly with the CPUs, this is the fastest virtualization method.
 #### Paravirtualization
-The guest communicates with the hypervisor. The hypervisor passes the unmodified calls from the guest to the CPU and other interfaces, both real and virtual. Because the calls are routed through the hypervisor, this method is slower than full virtualization.
 - Uses a modified guest operation system.
 - The guest communicates with the hypervisor. The hypervisor passes the unmodified calls from the guest to the CPU and other interfaces, both real and virtual.
 - Because the calls are routed through the hypervisor, this method is slower than full virtualization.
 #### Software virtualization (or emulation)
+- Uses binary translation and other emulation techniques to run unmodified operating systems.
+- The hypervisor translates the guest calls to a format that can be used by the host system.
+- Because all calls are translated, this method is slower than paravirtualization.
 #### Containerization
 ## Virtualization Solutions
