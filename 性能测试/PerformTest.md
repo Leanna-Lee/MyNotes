@@ -193,7 +193,12 @@ It has support for different types of I/O engines (sync, mmap, libaio, posixaio,
 
 It can work on block devices as well as files. fio accepts job descriptions in a simple-to-understand text format. Several example job files are included. fio displays all sorts of I/O performance information, including complete IO latencies and percentiles.   
 
-Fio is in wide use in many places, for both benchmarking, QA, and verification purposes. It supports Linux, FreeBSD, NetBSD, OpenBSD, OS X, OpenSolaris, AIX, HP-UX, Android, and Windows.
+Fio is in wide use in many places, for both benchmarking, QA, and verification purposes. It supports Linux, FreeBSD, NetBSD, OpenBSD, OS X, OpenSolaris, AIX, HP-UX, Android, and Windows.  
+
+[FIO安装部署及测试方法案例https://blog.csdn.net/wuxiaobingandbob/article/details/80883303](https://blog.csdn.net/wuxiaobingandbob/article/details/80883303)  
+
+[如何测试云硬盘 http://ju.outofmemory.cn/entry/90891](http://ju.outofmemory.cn/entry/90891)
+
 #### 1 下载地址  
 [http://freshmeat.sourceforge.net/projects/fio](http://freshmeat.sourceforge.net/projects/fio)  
 [https://github.com/axboe/fio/](https://github.com/axboe/fio/)  
