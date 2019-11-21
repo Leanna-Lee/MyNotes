@@ -4,4 +4,6 @@
   SMP 即多个 CPU 通过一个总线访问存储器，因此 SMP 系统有时也被称为一致内存访问（UMA）结构体系。一致性意指无论在什么时候，处理器只能为内存的每个数据保持或共享唯一一个数值。  
 ![SMP架构.png](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/image/SMP%E6%9E%B6%E6%9E%84.png)
 - MPP 模式
-- NUMA 技术
+- NUMA 技术  
+  NUMA 模式则是每个处理器有自己的存储器，每个处理器也可以访问别的处理器的存储器。  
+![NUMA架构.png](1)
