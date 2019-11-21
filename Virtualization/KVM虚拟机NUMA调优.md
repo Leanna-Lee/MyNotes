@@ -6,4 +6,4 @@
 - MPP 模式
 - NUMA 技术  
   NUMA 模式则是每个处理器有自己的存储器，每个处理器也可以访问别的处理器的存储器。  
-![NUMA架构.png](1)
+![NUMA架构.png](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/image/NUMA%E6%9E%B6%E6%9E%84.png)
