@@ -2,6 +2,6 @@
 多 CPU 共同工作有三种架构：SMP、MPP、NUMA  
 - SMP 技术
   SMP 即多个 CPU 通过一个总线访问存储器，因此 SMP 系统有时也被称为一致内存访问（UMA）结构体系。一致性意指无论在什么时候，处理器只能为内存的每个数据保持或共享唯一一个数值。  
-![SMP架构.png](0)
+![SMP架构.png](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/image/SMP%E6%9E%B6%E6%9E%84.png)
 - MPP 模式
 - NUMA 技术
