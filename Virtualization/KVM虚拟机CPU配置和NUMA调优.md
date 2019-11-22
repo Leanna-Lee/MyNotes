@@ -123,4 +123,7 @@ CPU 配置模式有 custom、host-model、host-passthrough 几种。
 ```  
 **使用 host-model 模式，libvirt 会根据物理 CPU 的型号，从规定的
  CPU 中选择一种最接近的 CPU 型号，而使用 host-passthrough 模式，在虚拟机中可以直接看到物理 CPU 的型号。**  
-**Note：使用 host-passthrough，不同型号 CPU 的宿主机之间虚拟机不能迁移。**
+**Note：使用 host-passthrough，不同型号 CPU 的宿主机之间虚拟机不能迁移。**  
+## 6、CPU Nested 配置  
+Nested：在虚拟机上运行虚拟机，即 KVM on KVM。VMWare 第一层是运用的硬件虚拟化技术，第二层是完全软件模拟出来的，所以 VMware 只能做两层嵌套。KVM 是将物理 CPU 的特性全部传给虚拟机，所以理论上可以嵌套 N 层。  
+（1）
