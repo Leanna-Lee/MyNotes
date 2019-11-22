@@ -61,10 +61,22 @@ CPU 绑定可以解决物理机 CPU 利用率严重不平均的问题
   <vcpupin vcpu='12' cpuset='8'/>  
   <vcpupin vcpu='13' cpuset='28'/>  
   <vcpupin vcpu='14' cpuset='9'/>  
-  <vcpupin vcpu='10' cpuset='7'/>  
-  <vcpupin vcpu='11' cpuset='27'/>  
-  <vcpupin vcpu='12' cpuset='8'/>  
-  <vcpupin vcpu='13' cpuset='28'/>  
-  <vcpupin vcpu='14' cpuset='9'/>  
+  <vcpupin vcpu='15' cpuset='29'/>  
+  <vcpupin vcpu='16' cpuset='12'/>  
+  <vcpupin vcpu='17' cpuset='32'/>  
+  <vcpupin vcpu='18' cpuset='13'/>  
+  <vcpupin vcpu='19' cpuset='33'/>  
+  <vcpupin vcpu='20' cpuset='14'/>  
+  <vcpupin vcpu='21' cpuset='34'/>  
+  <vcpupin vcpu='22' cpuset='15'/>  
+  <vcpupin vcpu='23' cpuset='35'/>  
+  <vcpupin vcpu='24' cpuset='12'/>  
+  <vcpupin vcpu='25' cpuset='32'/>  
+  <vcpupin vcpu='26' cpuset='13'/>  
+  <vcpupin vcpu='27' cpuset='33'/>  
+  <vcpupin vcpu='28' cpuset='12'/>  
+  <vcpupin vcpu='29' cpuset='32'/>  
+  <vcpupin vcpu='30' cpuset='13'/>  
+  <vcpupin vcpu='31' cpuset='33'/>  
 </cputune>
 ```
