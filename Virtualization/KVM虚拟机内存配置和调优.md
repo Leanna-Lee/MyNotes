@@ -2,7 +2,7 @@
 - [1、宿主机内存合并（压缩）](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/KVM%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%86%85%E5%AD%98%E9%85%8D%E7%BD%AE%E5%92%8C%E8%B0%83%E4%BC%98.md#1%E5%AE%BF%E4%B8%BB%E6%9C%BA%E5%86%85%E5%AD%98%E5%90%88%E5%B9%B6%E5%8E%8B%E7%BC%A9)   
 - [2、查看 KSM 运行情况](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/KVM%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%86%85%E5%AD%98%E9%85%8D%E7%BD%AE%E5%92%8C%E8%B0%83%E4%BC%98.md#2%E6%9F%A5%E7%9C%8B-ksm-%E8%BF%90%E8%A1%8C%E6%83%85%E5%86%B5)  
 - [3、禁止个别虚拟机进行内存压缩](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/KVM%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%86%85%E5%AD%98%E9%85%8D%E7%BD%AE%E5%92%8C%E8%B0%83%E4%BC%98.md#3%E7%A6%81%E6%AD%A2%E4%B8%AA%E5%88%AB%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%BF%9B%E8%A1%8C%E5%86%85%E5%AD%98%E5%8E%8B%E7%BC%A9)  
-- [4、内存气球配置]()
+- [4、内存气球配置](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/KVM%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%86%85%E5%AD%98%E9%85%8D%E7%BD%AE%E5%92%8C%E8%B0%83%E4%BC%98.md#4%E5%86%85%E5%AD%98%E6%B0%94%E7%90%83%E9%85%8D%E7%BD%AE)
 # KVM 虚拟机内存配置和调优
 宿主机的内存压缩主要采用 KSM（Kernel SamePage Merging）技术。  
 - **COW**  
