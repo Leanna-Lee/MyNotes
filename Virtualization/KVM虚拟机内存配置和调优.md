@@ -18,4 +18,15 @@ service ksm stop
 service ksmtuned stop
 chkconfig ksm off
 chkconfig ksmtuned off
+```  
+## 2、查看 KSM 运行情况
+You can verify KSM is in action, by checking for the existence of some of its /sys files, under /sys/kernel/mm/ksm/
+
+They are:
+```
+pages_shared	how many shared pages are being used
+pages_sharing	how many more sites are sharing them i.e. how much saved
+pages_unshared	how many pages unique but repeatedly checked for merging
+pages_volatile	how many pages changing too fast to be placed in a tree
+full_scans	how many times all mergeable areas have been scanned
 ```
