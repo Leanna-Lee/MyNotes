@@ -105,4 +105,4 @@ CPU 绑定实际上是 libvirt 通过 CGroup 来实现的，通过 CGroup 直接
 CPU 配置模式有 custom、host-model、host-passthrough 几种。  
 ### 5.1 custom 模式
 ### 5.2 host-model 模式
-### 5.3 
+### 5.3 host-passthrough 模式
