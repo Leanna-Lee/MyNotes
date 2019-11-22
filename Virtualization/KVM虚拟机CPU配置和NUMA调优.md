@@ -101,4 +101,8 @@ CPU 绑定实际上是 libvirt 通过 CGroup 来实现的，通过 CGroup 直接
 目前不支持 CPU 热去除，可以在虚拟机中关闭 CPU：  
 `echo 0 > /sys/devices/system/cpu/cpu4/online`  
 ## 5、CPU host-passthrough  
-在物理机 /usr/share/libvirt/cpu_map.xml 中可以查到 libvirt 支持的 CPU 型号、生产商信息和每种型号的 CPU 特定定义等信息。
+在物理机 /usr/share/libvirt/cpu_map.xml 中可以查到 libvirt 支持的 CPU 型号、生产商信息和每种型号的 CPU 特定定义等信息。  
+CPU 配置模式有 custom、host-model、host-passthrough 几种。  
+### 5.1 custom 模式
+### 5.2 host-model 模式
+### 5.3 
