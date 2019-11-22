@@ -121,4 +121,5 @@ CPU 配置模式有 custom、host-model、host-passthrough 几种。
 ```
 <cpu mode='host-passthrough'/>
 ```  
-**使用 host-model 模式，libvirt 会根据物理 CPU 的**
+**使用 host-model 模式，libvirt 会根据物理 CPU 的型号，从规定的
+ CPU 中选择一种最接近的 CPU 型号，而使用 host-passthrough 模式，在虚拟机中可以直接看到物理 CPU 的型号。**
