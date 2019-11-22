@@ -80,4 +80,4 @@ CPU 绑定可以解决物理机 CPU 利用率严重不平均的问题
   <vcpupin vcpu='31' cpuset='39'/>  
 </cputune>
 ```  
-通过 CPU 绑定，可以避免虚拟机同一个 numa 的 vCPU 在物理机上跨 NUMA
+通过 CPU 绑定，可以避免虚拟机同一个 numa 的 vCPU 在物理机上跨 NUMA   
