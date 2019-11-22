@@ -43,3 +43,12 @@ full_scans	how many times all mergeable areas have been scanned
 ```  
 ## 4、内存气球配置
 KVM 的内存气球技术可以动态调节虚拟机内存大小，提高内存的利用率。  
+虚拟机需要安装 virt ballon 驱动，内核开启 CONFIG_VIRTIO_BALLON。  
+在虚拟机中查看：`lspci | grep "Virtio memory balloon`  
+虚拟机 xml 配置文件如下：  
+```
+<memballoon model='virtio'>  
+  <alias name='balloon0'/>
+</memballoon>
+```  
+balloon
