@@ -51,4 +51,12 @@ KVM 的内存气球技术可以动态调节虚拟机内存大小，提高内存�
   <alias name='balloon0'/>
 </memballoon>
 ```  
-balloon
+balloon 的膨胀与压缩：  
+- 膨胀：把虚拟机的内存拿掉，还给宿主机。  
+- 压缩：把宿主机的内存给虚拟机使用。  
+```
+查看虚拟机当前内存大小：  
+virsh qemu-monitor-command <domain> --hmp --cmd info balloon  
+限定虚拟机内存大小为 4GB
+
+```
