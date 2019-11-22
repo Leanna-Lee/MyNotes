@@ -10,4 +10,12 @@ KSM 设计初衷就是为了给虚拟化节约内存的，因为如果虚拟机�
 （1）KSM 需要扫描相同的内存页，会消耗一定的计算机资源用于内存扫描，加重 CPU 的开销；  
 （2）使用 KSM 还需要保证足够的内存交换空间，因为我们把多个内存页合并为一个，当内存耗尽，而恰好有内存页需要修改时，此时内存就溢出了，只能是频繁地使用 swap 交互，导致虚拟机性能下降严重。
 ## 1、宿主机内存合并（压缩）
-KSM 在 CentOS6、CentOS7上是默认打开的。
+KSM 在 CentOS6、CentOS7上是默认打开的，主要有两个服务：  
+- KSM 服务  
+- ksmtuned 服务
+```
+service ksm stop
+service ksmtuned stop
+chkconfig ksm off
+chkconfig ksmtuned off
+```
