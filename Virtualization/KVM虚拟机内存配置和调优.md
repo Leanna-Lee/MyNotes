@@ -40,4 +40,6 @@ full_scans	how many times all mergeable areas have been scanned
 <memoryBacking>  
   <nosharepages/>
 </memoryBacking>
-```
+```  
+## 4、内存气球配置
+KVM 的内存气球技术可以动态调节虚拟机内存大小，提高内存的利用率。  
