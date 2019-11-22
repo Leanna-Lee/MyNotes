@@ -3,6 +3,7 @@
 - [2、查看 KSM 运行情况](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/KVM%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%86%85%E5%AD%98%E9%85%8D%E7%BD%AE%E5%92%8C%E8%B0%83%E4%BC%98.md#2%E6%9F%A5%E7%9C%8B-ksm-%E8%BF%90%E8%A1%8C%E6%83%85%E5%86%B5)  
 - [3、禁止个别虚拟机进行内存压缩](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/KVM%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%86%85%E5%AD%98%E9%85%8D%E7%BD%AE%E5%92%8C%E8%B0%83%E4%BC%98.md#3%E7%A6%81%E6%AD%A2%E4%B8%AA%E5%88%AB%E8%99%9A%E6%8B%9F%E6%9C%BA%E8%BF%9B%E8%A1%8C%E5%86%85%E5%AD%98%E5%8E%8B%E7%BC%A9)  
 - [4、内存气球配置](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/KVM%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%86%85%E5%AD%98%E9%85%8D%E7%BD%AE%E5%92%8C%E8%B0%83%E4%BC%98.md#4%E5%86%85%E5%AD%98%E6%B0%94%E7%90%83%E9%85%8D%E7%BD%AE)
+- [5、虚拟机内存大小限制]()
 # KVM 虚拟机内存配置和调优
 宿主机的内存压缩主要采用 KSM（Kernel SamePage Merging）技术。  
 - **COW**  
@@ -64,3 +65,28 @@ balloon 的膨胀与压缩：
 # virsh qemu-monitor-command <domain> --hmp --cmd balloon 4096
 ```  
 ## 5、虚拟机内存大小限制
+将虚拟机的内存限定在一定范围内  
+```
+# virsh memtune --help  
+  NAME  
+    memtune - Get or set memory parameters  
+  
+  SYNOPSIS
+    memtune <domain> [--hard-limit <number>] [--soft-limit <number>] [--swap-hard-limit <number>] [--min-guarantee <number>] [--config] [--live] [--current]  
+
+  DESCRIPTION
+    Get or set the current memory parameters for a guest domain.  
+    To get the memory parameters use following command:  
+  
+    virsh # memtune <domain>  
+
+  OPTIONS  
+    [--domain] <string>  domain name, id or uuid
+    --hard-limit <number>  Max memory, as scaled integer (default KiB)  
+    --soft-limit <number>  Memory during contention, as scaled integer (default KiB)  
+    --swap-hard-limit <number>  Max memory plus swap, as scaled integer (default KiB)  
+    --min-guarantee <number>  Min guaranteed memory, as scaled integer (default KiB)  
+    --config         affect next boot  
+    --live           affect running domain  
+    --current        affect current domain  
+```
