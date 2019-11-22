@@ -19,7 +19,7 @@ Linux 系统默认自动开启 NUMA 平衡策略。如果要关闭 Linux 系统�
 `# echo 1 > /proc/sys/kernel/numa_balancing`  
 ## 2、虚拟机 NUMA 信息查看与配置  
 查看或者修改虚拟机的 NUMA 配置：`virsh numatune`  
-配置文件：  
+配置文件（以 32Core32G 虚拟机为例）：    
 ```
 <cputune>  
   ...   
@@ -34,7 +34,7 @@ Linux 系统默认自动开启 NUMA 平衡策略。如果要关闭 Linux 系统�
   ...  
   <numa>  
     <cell id='0' cpus='0-15' memory='16777216' unit='KiB'/>  
-    <cell id='1' cpus='16-31' memory='16777216' unit='KiB'/> 
+    <cell id='1' cpus='16-31' memory='16777216' unit='KiB'/>   
   </numa>  
 </cpu>
 ```
