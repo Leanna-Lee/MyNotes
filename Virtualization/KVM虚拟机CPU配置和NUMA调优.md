@@ -1,3 +1,5 @@
+***[KVM 虚拟机 CPU 配置 和 NUMA调优](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/KVM%E8%99%9A%E6%8B%9F%E6%9C%BACPU%E9%85%8D%E7%BD%AE%E5%92%8CNUMA%E8%B0%83%E4%BC%98.md)***
+- [宿主机的 NUMA 信息查看与配置](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/GettingStartedGuide.md#what-is-virtualization)
 # KVM 虚拟机 CPU 配置 和 NUMA调优
 多 CPU 共同工作有三种架构：SMP、MPP、NUMA  
 - **SMP 技术**   
