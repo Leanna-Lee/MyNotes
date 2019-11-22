@@ -88,3 +88,9 @@ CPU 绑定可以解决物理机 CPU 利用率严重不平均的问题
 CPU 绑定实际上是 libvirt 通过 CGroup 来实现的，通过 CGroup 直接去绑定 KVM 虚拟机进程也可以。通过 CGroup 不仅可以做 CPU 绑定，还可以限制虚拟机磁盘、网络的资源限制。  
 ## 4、虚拟机 CPU 热添加
 ***前提：在创建虚拟机前，需要给虚拟机预留足够的 CPU***  
+在虚拟机中查看 CPU：`cat /proc/interrupts`  
+把虚拟机 CPU 数量在线修改成 5 个：`virsh setvcpus <domain> <cpus number> --live`  
+在虚拟机中执行如下命令，将第 5 个 CPU 激活：  
+`echo 1 > /sys/devices/system/cpu/cpu4/online`  
+目前不支持 CPU 热去除，可以在虚拟机中关闭 CPU：  
+`echo 0 > /sys/devices/system/cpu/cpu4/online`
