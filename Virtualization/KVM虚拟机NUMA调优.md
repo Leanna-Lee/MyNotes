@@ -44,4 +44,27 @@ CPU 绑定可以解决物理机 CPU 利用率严重不平均的问题
 配置文件（以 32Core32G 虚拟机为例，物理机 2 Numa nodes，40 CPUs）：  
 **此时用 stream 测虚拟机内存带宽提升到 59-65 GB/s**  
 ```
+<vcpu placement='static'>32</vcpu>  
+<cputune>   
+  <vcpupin vcpu='0' cpuset='2'/>  
+  <vcpupin vcpu='1' cpuset='22'/>  
+  <vcpupin vcpu='2' cpuset='3'/>  
+  <vcpupin vcpu='3' cpuset='23'/>  
+  <vcpupin vcpu='4' cpuset='4'/>  
+  <vcpupin vcpu='5' cpuset='24'/>  
+  <vcpupin vcpu='6' cpuset='5'/>  
+  <vcpupin vcpu='7' cpuset='25'/>  
+  <vcpupin vcpu='8' cpuset='6'/>  
+  <vcpupin vcpu='9' cpuset='26'/>  
+  <vcpupin vcpu='10' cpuset='7'/>  
+  <vcpupin vcpu='11' cpuset='27'/>  
+  <vcpupin vcpu='12' cpuset='8'/>  
+  <vcpupin vcpu='13' cpuset='28'/>  
+  <vcpupin vcpu='14' cpuset='9'/>  
+  <vcpupin vcpu='10' cpuset='7'/>  
+  <vcpupin vcpu='11' cpuset='27'/>  
+  <vcpupin vcpu='12' cpuset='8'/>  
+  <vcpupin vcpu='13' cpuset='28'/>  
+  <vcpupin vcpu='14' cpuset='9'/>  
+</cputune>
 ```
