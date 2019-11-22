@@ -70,13 +70,14 @@ CPU 绑定可以解决物理机 CPU 利用率严重不平均的问题
   <vcpupin vcpu='21' cpuset='34'/>  
   <vcpupin vcpu='22' cpuset='15'/>  
   <vcpupin vcpu='23' cpuset='35'/>  
-  <vcpupin vcpu='24' cpuset='12'/>  
-  <vcpupin vcpu='25' cpuset='32'/>  
-  <vcpupin vcpu='26' cpuset='13'/>  
-  <vcpupin vcpu='27' cpuset='33'/>  
-  <vcpupin vcpu='28' cpuset='12'/>  
-  <vcpupin vcpu='29' cpuset='32'/>  
-  <vcpupin vcpu='30' cpuset='13'/>  
-  <vcpupin vcpu='31' cpuset='33'/>  
+  <vcpupin vcpu='24' cpuset='16'/>  
+  <vcpupin vcpu='25' cpuset='36'/>  
+  <vcpupin vcpu='26' cpuset='17'/>  
+  <vcpupin vcpu='27' cpuset='37'/>  
+  <vcpupin vcpu='28' cpuset='18'/>  
+  <vcpupin vcpu='29' cpuset='38'/>  
+  <vcpupin vcpu='30' cpuset='19'/>  
+  <vcpupin vcpu='31' cpuset='39'/>  
 </cputune>
-```
+```  
+通过 CPU 绑定，可以避免虚拟机同一个 numa 的 vCPU 在物理机上跨 NUMA
