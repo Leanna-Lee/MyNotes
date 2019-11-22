@@ -3,7 +3,7 @@
 - [2、虚拟机 NUMA 信息查看与配置](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/KVM%E8%99%9A%E6%8B%9F%E6%9C%BACPU%E9%85%8D%E7%BD%AE%E5%92%8CNUMA%E8%B0%83%E4%BC%98.md#2%E8%99%9A%E6%8B%9F%E6%9C%BA-numa-%E4%BF%A1%E6%81%AF%E6%9F%A5%E7%9C%8B%E4%B8%8E%E9%85%8D%E7%BD%AE)  
 - [3、CPU 绑定操作方式](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/KVM%E8%99%9A%E6%8B%9F%E6%9C%BACPU%E9%85%8D%E7%BD%AE%E5%92%8CNUMA%E8%B0%83%E4%BC%98.md#3cpu-%E7%BB%91%E5%AE%9A%E6%93%8D%E4%BD%9C%E6%96%B9%E5%BC%8F)  
 - [4、虚拟机 CPU 热添加](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/KVM%E8%99%9A%E6%8B%9F%E6%9C%BACPU%E9%85%8D%E7%BD%AE%E5%92%8CNUMA%E8%B0%83%E4%BC%98.md#4%E8%99%9A%E6%8B%9F%E6%9C%BA-cpu-%E7%83%AD%E6%B7%BB%E5%8A%A0)  
-- [5、CPU host-passthrough]()
+- [5、CPU host-passthrough](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/KVM%E8%99%9A%E6%8B%9F%E6%9C%BACPU%E9%85%8D%E7%BD%AE%E5%92%8CNUMA%E8%B0%83%E4%BC%98.md#5cpu-host-passthrough)
 # KVM 虚拟机 CPU 配置 和 NUMA调优
 多 CPU 共同工作有三种架构：SMP、MPP、NUMA  
 - **SMP 技术**   
@@ -103,6 +103,13 @@ CPU 绑定实际上是 libvirt 通过 CGroup 来实现的，通过 CGroup 直接
 ## 5、CPU host-passthrough  
 在物理机 /usr/share/libvirt/cpu_map.xml 中可以查到 libvirt 支持的 CPU 型号、生产商信息和每种型号的 CPU 特定定义等信息。  
 CPU 配置模式有 custom、host-model、host-passthrough 几种。  
-### 5.1 custom 模式
+### 5.1 custom 模式  
+```
+<cpu mode='custom' match='exact'>
+  <model fallback='allow'>kvm64</model>
+...
+  <feature policy='require' name='monitor'/>
+<\cpu>
+```
 ### 5.2 host-model 模式
 ### 5.3 host-passthrough 模式
