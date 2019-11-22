@@ -3,7 +3,7 @@
 - [2、虚拟机 NUMA 信息查看与配置](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/KVM%E8%99%9A%E6%8B%9F%E6%9C%BACPU%E9%85%8D%E7%BD%AE%E5%92%8CNUMA%E8%B0%83%E4%BC%98.md#2%E8%99%9A%E6%8B%9F%E6%9C%BA-numa-%E4%BF%A1%E6%81%AF%E6%9F%A5%E7%9C%8B%E4%B8%8E%E9%85%8D%E7%BD%AE)  
 - [3、CPU 绑定操作方式](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/KVM%E8%99%9A%E6%8B%9F%E6%9C%BACPU%E9%85%8D%E7%BD%AE%E5%92%8CNUMA%E8%B0%83%E4%BC%98.md#3cpu-%E7%BB%91%E5%AE%9A%E6%93%8D%E4%BD%9C%E6%96%B9%E5%BC%8F)  
 - [4、虚拟机 CPU 热添加](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/KVM%E8%99%9A%E6%8B%9F%E6%9C%BACPU%E9%85%8D%E7%BD%AE%E5%92%8CNUMA%E8%B0%83%E4%BC%98.md#4%E8%99%9A%E6%8B%9F%E6%9C%BA-cpu-%E7%83%AD%E6%B7%BB%E5%8A%A0)  
-- 
+- [5、CPU host-passthrough]()
 # KVM 虚拟机 CPU 配置 和 NUMA调优
 多 CPU 共同工作有三种架构：SMP、MPP、NUMA  
 - **SMP 技术**   
