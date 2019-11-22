@@ -92,5 +92,11 @@ balloon 的膨胀与压缩：
 ```  
 或者写到虚拟机 xml 配置文件中：  
 ```
-
+<memory unit='KiB'>8388608</memory>  
+<currentyMemory unit='KiB'>4194304</currentMemory>  
+<memtune>  
+  <hard_limit unit='KiB'>9437184</hard_limit>  
+  <soft_limit unit='KiB'>7340032<soft_limit>  
+  <min_guarantee unit='KiB'>4194304</min_guarantee>  
+  <swap_hard_limit unit='KiB'>1048832
 ```
