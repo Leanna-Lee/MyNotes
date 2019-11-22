@@ -62,4 +62,5 @@ balloon 的膨胀与压缩：
 # virsh qemu-monitor-command <domain> --hmp --cmd balloon 2048  
 限定虚拟机内存大小为 4GB：  
 # virsh qemu-monitor-command <domain> --hmp --cmd balloon 4096
-```
+```  
+## 5、虚拟机内存大小限制
