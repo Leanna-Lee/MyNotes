@@ -24,9 +24,16 @@ You can verify KSM is in action, by checking for the existence of some of its /s
 
 They are:
 ```
-pages_shared	how many shared pages are being used
-pages_sharing	how many more sites are sharing them i.e. how much saved
-pages_unshared	how many pages unique but repeatedly checked for merging
-pages_volatile	how many pages changing too fast to be placed in a tree
-full_scans	how many times all mergeable areas have been scanned
+pages_shared	how many shared pages are being used  
+pages_sharing	how many more sites are sharing them i.e. how much saved  
+pages_unshared	how many pages unique but repeatedly checked for merging  
+pages_volatile	how many pages changing too fast to be placed in a tree  
+full_scans	how many times all mergeable areas have been scanned  
+```  
+## 3、禁止个别虚拟机进行内存压缩
+阻止宿主机将特定的虚拟机内存页合并，xml 配置文件如下：  
+```
+<memoryBacking>  
+  <nosharepages/>
+</memoryBacking>
 ```
