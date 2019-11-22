@@ -111,5 +111,14 @@ CPU 配置模式有 custom、host-model、host-passthrough 几种。
   <feature policy='require' name='monitor'/>
 <\cpu>
 ```
-### 5.2 host-model 模式
+### 5.2 host-model 模式  
+根据物理 CPU 的特性，选择一个最靠近的标准 CPU 型号。如果没有指定 CPU 模式，默认也是使用这种模式，xml 配置文件如下：  
+```
+<cpu mode='host-model'/>
+```
 ### 5.3 host-passthrough 模式
+直接将物理 CPU 暴露给虚拟机使用，在虚拟机上完全可以看到物理 CPU 的型号，xml 配置文件如下：  
+```
+<cpu mode='host-passthrough'/>
+```  
+**使用 host-model 模式，libvirt 会根据物理 CPU 的**
