@@ -9,4 +9,13 @@
   NUMA 模式则是每个处理器有自己的存储器，每个处理器也可以访问别的处理器的存储器。如果说 SMP 相当于多个 CPU 连接一个内存池导致请求经常发生冲突的话，NUMA 就是将 CPU 的资源分开，以 Node 为单位进行切割，每个 Node 里有着独有的 core，memory 等资源，这也就导致了 CPU 在性能使用上的提升，但是同样存在问题就是 2 个 Node 之间的资源交互非常慢，当 CPU 增多的情况下，性能提升的幅度并不是很高。每个 Core 访问自己的存储器要比访问别的存储器快很多，速度相差 10~100 倍。
 ![NUMA架构.png](https://github.com/Leanna-Lee/MyNotes/blob/master/Virtualization/image/NUMA%E6%9E%B6%E6%9E%84.png)   
 ## 1、宿主机的 NUMA 信息查看与配置  
-查看当前 CPU 硬件的情况：`numactl --hardware`
+查看当前 CPU 硬件的情况：`numactl --hardware`  
+查看每个节点的内存统计：`numastat`  
+查看相关进程的 NUMA 内存使用情况：`numastat -c qemu-kvm`  
+
+Linux 系统默认自动开启 NUMA 平衡策略。如果要关闭 Linux 系统的自动平衡，可以使用如下命令：  
+`# echo 0  > /proc/sys/kernel/numa_balancing`    
+开启自动 NUMA 平衡策略：  
+`# echo 1 > /proc/sys/kernel/numa_balancing`  
+## 2、虚拟机 NUMA 信息查看与配置  
+查看或者修改虚拟机的 NUMA 配置：`virsh numatune`
