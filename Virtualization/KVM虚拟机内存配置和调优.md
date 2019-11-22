@@ -101,7 +101,7 @@ balloon 的膨胀与压缩：
   <swap_hard_limit unit='KiB'>10488320</swap_hard_limit>  
 </memtune>
 ```  
-限制虚拟机对宿主机 swap 的使用。locked 阻止宿主机将 swap 内存分配给虚拟机。设置 locked 参数，必须在 <memtune> 中设置 hard_limit  
+限制虚拟机对宿主机 swap 的使用。locked 阻止宿主机将 swap 内存分配给虚拟机。设置 locked 参数，必须在 memtune 中设置 hard_limit  
 ```
 <memoryBacking>  
   <locked/>
