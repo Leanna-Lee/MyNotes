@@ -82,4 +82,5 @@ CPU 绑定可以解决物理机 CPU 利用率严重不平均的问题
 ```  
 通过 CPU 绑定，可以避免虚拟机同一个 numa 的 vCPU 在物理机上跨 NUMA   
 查看虚拟机 vCPU 和物理机 CPU 的对应关系：`virsh vcpuinfo`  
-查看虚拟机可以使用哪些物理逻辑 CPU：`virsh emulatorpin`
+查看虚拟机可以使用哪些物理逻辑 CPU：`virsh emulatorpin`  
+强制 vCPU 和物理机 CPU 一对一绑定：`virsh vcpupin <domain> <vcpu> <cpu>`
