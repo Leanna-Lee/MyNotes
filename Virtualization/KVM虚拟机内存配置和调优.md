@@ -118,4 +118,4 @@ x86 默认巨页大小是 2M
 - 查看巨页挂载信息：  
 `df -h | grep -i huge`  // hugetlbfs  
 - 重启 libvirtd 服务：systemctl restart libvirtd  
-- 关闭巨页配置：systemcl
+- 关闭巨页配置：`sysctl vm.nr_hugepages=0`
