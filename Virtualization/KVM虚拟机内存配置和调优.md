@@ -123,9 +123,10 @@ x86 默认内存页大小为 4KB。在虚拟内存管理中，内核维护一个
   
 **虚拟机 xml 配置文件：**    
 ```
-<currentMemory unit='KiB'>209715200</currentMemory>
-<memoryBacking>
-
+<currentMemory unit='KiB'>209715200</currentMemory>  
+<memoryBacking>   
+  <hugepages>  
+</memoryBacking>
 ```  
 
 如果要使用 1GB 的巨页，在 /etc/default/grub 和 /boot/efi/EFI/redhat/grub.cfg 配置文件中加入：  
