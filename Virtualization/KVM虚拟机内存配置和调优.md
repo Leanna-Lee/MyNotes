@@ -125,7 +125,7 @@ x86 默认内存页大小为 4KB。在虚拟内存管理中，内核维护一个
 ```
 <currentMemory unit='KiB'>209715200</currentMemory>  
 <memoryBacking>   
-  <hugepages>  
+  <hugepages/>  
 </memoryBacking>
 ```  
 
