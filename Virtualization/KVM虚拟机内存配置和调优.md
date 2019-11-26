@@ -116,7 +116,7 @@ x86 默认内存页大小为 4KB。在虚拟内存管理中，内核维护一个
 `sysctl -a | grep -i huge`  
 `cat /proc/meminfo | grep -i huge`  
 - 查看巨页挂载信息：  
-`df -h | grep -i huge`  // hugetlbfs  
+`mount | grep -i huge`  // hugetlbfs  
 - 重启 libvirtd 服务：systemctl restart libvirtd  
 - 关闭巨页配置：`sysctl vm.nr_hugepages=0`  
 - 查看当前巨型页使用情况：`cat /proc/sys/vm/nr_hugepages`   
