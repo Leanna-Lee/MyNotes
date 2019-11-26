@@ -119,4 +119,13 @@ x86 默认内存页大小为 4KB。在虚拟内存管理中，内核维护一个
 `df -h | grep -i huge`  // hugetlbfs  
 - 重启 libvirtd 服务：systemctl restart libvirtd  
 - 关闭巨页配置：`sysctl vm.nr_hugepages=0`  
-- 查看当前巨型页使用情况：`cat /proc/sys/vm/nr_hugepages`  
+- 查看当前巨型页使用情况：`cat /proc/sys/vm/nr_hugepages`   
+
+如果要使用 1GB 的巨页，在 /etc/default/grub 和 /boot/efi/EFI/redhat/grub.cfg 配置文件中加入：  
+`default_hugepagesz=1G hugepagesz=1G hugepages=200`  
+  
+让修改的 grub 配置生效：  
+```
+# grub2-mkconfig -o /etc/grub2.cfg  
+# grub2-mkconfig -o /etc/grub2-efi.cfg
+```
