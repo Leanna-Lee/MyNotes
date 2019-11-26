@@ -131,4 +131,7 @@ Nested：在虚拟机上运行虚拟机，即 KVM on KVM。VMWare 第一层是�
 检查是否打开 Nested 功能：  
 `cat /sys/module/kvm_intel/parameters/nested`  
 （2）虚拟机配置文件，CPU 使用 host-passthrough 模式  
-`<cpu mode='host-passthrough'/>`
+`<cpu mode='host-passthrough'/>`  
+## 7、物理机 BIOS 开启高性能模式  
+重启物理机后，若 /proc/cmdline 存在 idle=poll intel_idle.max_cstate=0 则表示 OS 已经开启高性能模式。  
+命令：`cat /proc/cmdline | grep 'idle=poll' | grep 'intel_idle.max_cstate=0'`
